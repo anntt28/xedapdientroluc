@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 12px;
+  @include minWidth(375px) {
+    font-size: 13px;
+  }
+  @include minWidth(992px) {
+    font-size: 14px;
+  }
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: $grey-2;
+}
+
+/* Scollbar */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 0;
+}
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+}
+
+.container-fluid {
+  padding: 0 5px;
+  @include minWidth(768px) {
+    padding: 0 40px;
+  }
+  @include minWidth(1440px) {
+    padding: 0;
+    max-width: 1200px;
+  }
+  @include trans;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  @include trans;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+p {
+  font-size: 13px;
+  line-height: 150%;
+  @include minWidth(1200px) {
+    font-size: 14px;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.fwb {
+  font-weight: bold !important;
+}
+
+.outline-0 {
+  outline: none !important;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 5px rgba($color: $dark, $alpha: 0.3);
+}
+
+.rounded-sm {
+  border-radius: $border-radius-sm !important;
+}
+
+.z-n1 {
+  z-index: -1;
+}
+
+.o0 {
+  opacity: 0 !important;
+}
+
+.rounded-xsm {
+  border-radius: 0.25rem !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  padding: 18px 5px;
+  font-weight: 600;
+  font-size: 1.143rem;
+  line-height: 130%;
+  width: 230px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 4px;
+  @include minWidth(992px) {
+    padding: 18px 10px;
+    font-size: 1rem;
+  }
+  .icon {
+    margin-left: 8px;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  width: 180px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.286rem;
+  line-height: 120%;
+  @include minWidth(1200px) {
+    font-size: 3.25rem;
+    line-height: 120%;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  @include minWidth(1200px) {
+    font-size: 38px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+  background: #2e2e2e;
+}
+
+.modal-content {
+  border-radius: 1.5rem;
+  background: #fff;
+  padding: 3.5rem 1.5rem 2rem;
+  @include minWidth(992px) {
+    padding: 3rem;
+  }
+}
+
+.modal {
+  .close {
+    opacity: 1;
+    width: 2rem;
+    height: 3rem;
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    @include minWidth(992px) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+    color: $primary;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey-2;
+    margin-bottom: 8px;
+    span {
+      color: $grey-1;
+    }
+  }
+
+  input {
+    border-radius: 8px;
+    outline: none;
+    height: 50px;
+    padding: 0.875rem 1rem;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &::-webkit-input-placeholder {
+      /* Edge */
+      color: $grey-1;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $grey-1;
+    }
+
+    &::placeholder {
+      color: $grey-1;
+    }
+  }
+
+  textarea {
+    @extend input;
+    height: auto;
+  }
+
+  .btn {
+    border-radius: 4px;
+  }
+  .text-danger {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  .modal-dialog {
+    @include minWidth(768px) {
+      max-width: 80%;
+    }
+    @include minWidth(1200px) {
+      max-width: 1100px;
+    }
+  }
+
+  .popup-child {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    transition: opacity 0.15s linear;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    &:not(.show) {
+      opacity: 0;
+    }
+
+    &.show {
+      display: flex;
+    }
+
+    .popup-backdrop {
+      opacity: 0.7;
+      background: #2e2e2e;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1040;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .popup-content {
+      position: relative;
+      z-index: 1041;
+      max-width: 100%;
+    }
+
+    .popup-body {
+      border-radius: 1.5rem;
+      background: $light;
+      max-width: 100%;
+      margin: auto;
+      padding: 3rem 1.5rem;
+      @include minWidth(992px) {
+        padding: 3rem;
+        max-width: 808px;
+      }
+    }
+
+    .close {
+      opacity: 1;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 2rem;
+      height: 2rem;
+      z-index: 10;
+      @include minWidth(992px) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    h2 {
+      color: $primary;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 120%; /* 38.4px */
+      margin-bottom: 2rem;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+        margin-right: 8px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 0;
+        color: $grey-1;
+      }
+    }
+  }
+  .image-cover-h {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding-top: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    img {
+      right: 0;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      position: absolute;
+      -o-object-position: 50% 50%;
+      object-position: 50% 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+  .swiper-button-pre-no-bg,
+  .swiper-button-next-no-bg {
+    &:hover {
+      svg {
+        path {
+          fill: #ff8f00;
+        }
+      }
+    }
+  }
+}
+.title-generals {
+  h2 {
+    color: $light-blue;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    @include minWidth(768px) {
+      width: max-content;
+      text-decoration: none;
+      border-bottom: 2px solid $light-blue;
+    }
+  }
+}

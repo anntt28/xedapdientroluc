@@ -1,0 +1,146 @@
+.swiper-container
+{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background: $light-blue;
+  opacity: 1;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #737373;
+}
+
+.swiper-pagination-bullet-active {
+  background: $light;
+  border: 1px solid $light;
+}
+.swiper-button {
+  opacity: 0;
+  visibility: hidden;
+  @include minWidth(1200px) {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    background: $light;
+    border: 1px solid rgba(160, 214, 255, 0.5);
+  }
+
+  &:hover {
+    background: $gray-03;
+    &::after {
+      color: $light;
+    }
+  }
+}
+.swiper-pagination
+{
+  width: 100%;
+  position: relative;
+}
+.swiper-button-next,
+.swiper-button-prev
+{
+  width: 40px;
+  height: 40px;
+  background-color: $light;
+  border-radius: 100%;
+  transition: all 0.3s;
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+  i{
+    color: $grey-2;
+    font-size: 16px;
+  }
+}
+.swiper-button-prev
+{
+  left: -7px;
+  &:hover{
+    &::before{
+      transform: rotateZ(180deg);
+    }
+  }
+  @include minWidth(480px) {
+    left: -15px;
+  }
+  @include minWidth(820px) {
+    left: -39px;
+  }
+  @include minWidth(1500px) {
+    left: 13px;
+  }
+}
+.swiper-button-next
+{
+  right: -7px;
+  &::before{
+    transform: rotateZ(180deg);
+  }
+  &:hover{
+    &::before{
+      transform: rotateZ(0deg);
+    }
+  }
+  @include minWidth(480px) {
+    right: -15px;
+  }
+  @include minWidth(820px) {
+    right: -39px;
+  }
+  @include minWidth(1500px) {
+    right: 13px;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+  @include minWidth(1024px) {
+    display: flex;
+    &.swiper-button-lock{
+      display: none;
+    }
+  }
+  &:after {
+    color: $main-01;
+    font-size: 16px;
+    font-weight: 900;
+    content: '';
+  }
+}
+
+.flickity-page-dots {
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  .dot {
+    background: #dadee2;
+    border-radius: 0;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    margin: 0 5px;
+  }
+  .is-selected {
+    background: transparent;
+    background: #01c0ea;
+  }
+}

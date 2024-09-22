@@ -1,0 +1,24 @@
+.breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.content-page-cate-pr {
+  padding-top: 39px;
+}
+
+.box-cate-pr {
+  border-radius: 20px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+}
+
+.box-cate-pr h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 33px;
+  text-transform: uppercase;
+}

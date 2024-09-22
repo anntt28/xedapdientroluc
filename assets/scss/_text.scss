@@ -1,0 +1,19 @@
+@for $i from 0 through 40 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.lh-1-75 {
+  line-height: 1.75;
+}
+
+.text-primary{
+  color: $primary !important;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}

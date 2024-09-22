@@ -1,0 +1,156 @@
+.menu-aside {
+  position: fixed;
+  top: 0px;
+  right: -150%;
+  width: 280px;
+  max-width: 100%;
+  height: calc(100vh);
+  background-color: $light-blue;
+  z-index: 1050;
+  @include trans;
+  h4 {
+    color: $light;
+    font-size: 14px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  a,
+  .menu-popup {
+    color: $light;
+    font-size: 13px;
+    line-height: 130%;
+    font-weight: 700;
+  }
+
+  li {
+    border-bottom: 1px solid $green-1;
+    a {
+      display: flex;
+      position: relative;
+      padding: 14px 17px;
+      font-weight: 500;
+      .icon {
+        margin-right: 13px;
+        img {
+          width: 15px;
+        }
+      }
+    }
+    .icon-open {
+      position: absolute;
+      right: 9px;
+      top: 48%;
+      transform: translateY(-50%);
+      .open {
+        display: none;
+      }
+      &.show-ic {
+        .open {
+          display: block;
+        }
+        .close {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .has-child {
+    .sub-menu {
+      margin-left: 35px;
+      li {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .menu-child {
+    margin: 16px;
+    a {
+      font-size: 12px;
+    }
+  }
+
+  .menu-item-has-children {
+    position: relative;
+    .icon {
+      margin-left: 8px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .sub-menu {
+      padding: 1rem;
+      a {
+        font-size: 0.85rem;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.overflow-hidden-x {
+  overflow-x: hidden !important;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1035;
+  @include trans;
+}
+
+.menu-aside-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 28px;
+  height: 28px;
+  z-index: 1070;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  @include trans;
+
+  span {
+    display: block;
+    width: 27px;
+    height: 2px;
+    background-color: $light;
+    border-radius: 2px;
+
+    &:first-child {
+      transform: translate(1px, 14px) rotate(45deg);
+    }
+    &:last-child {
+      transform: translate(1px, 12px) rotate(-45deg);
+    }
+  }
+}
+
+.menu-aside-page {
+  &.show {
+    .menu-aside {
+      right: 0;
+    }
+
+    .backdrop {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu-aside-close {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

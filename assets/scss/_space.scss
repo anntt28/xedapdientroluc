@@ -1,0 +1,55 @@
+@for $i from 0 through 200 {
+  .w--#{$i} {
+    width: $i * 4px;
+  }
+
+  .h--#{$i} {
+    height: $i * 4px;
+  }
+}
+
+@for $i from 0 through 200 {
+  @include minWidth(768px) {
+    .w-md--#{$i} {
+      width: $i * 4px;
+    }
+
+    .h-md--#{$i} {
+      height: $i * 4px;
+    }
+  }
+}
+
+@for $i from 0 through 200 {
+  @include minWidth(992px) {
+    .w-lg--#{$i} {
+      width: $i * 4px;
+    }
+
+    .h-lg--#{$i} {
+      height: $i * 4px;
+    }
+  }
+}
+
+@for $i from 0 through 200 {
+  @include minWidth(1440px) {
+    .w-xxl--#{$i} {
+      width: $i * 4px;
+    }
+
+    .h-xxl--#{$i} {
+      height: $i * 4px;
+    }
+  }
+}
+
+@for $i from 0 through 200 {
+  .mw--#{$i} {
+    max-width: $i * 4px;
+  }
+
+  .mh--#{$i} {
+    max-height: $i * 4px;
+  }
+}
