@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Product detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+ </head>
+
+ <body>
+  <header class="header-page py-6 transition">
+   <div class="header_top">
+    <div class="container-fluid">
+     <div class="content d-flex justify-content-between">
+      <div class="item header_top__left">
+       <div class="info_sale">
+        <div class="dot">
+         <div class="wave"></div>
+        </div>
+        <a>Xe Đạp Điện Trợ Lực đang trở thành xu hướng - Cảm ơn quý khách đã lựa chọn</a>
+       </div>
+      </div>
+      <div class="item header_top__right">
+       <div class="header_address">
+        <div class="icon"><img src="/assets/images/Vector.png" alt="icon" /></div>
+        <div class="number"><marquee scrollamount="2">109 Trần Duy Hưng, Cầu Giấy, Hà Nội và 243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</marquee></div>
+       </div>
+       <div class="hotline_head">
+        <div class="icon"><img src="/assets/images/bx_bxs-phone-call.png" alt="icon" /></div>
+        <div class="number"><a href="tel:0707.10.9999">0707.10.9999</a></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- header pc -->
+   <div class="header_middle d-xl-flex d-none align-items-center">
+    <div class="container-fluid">
+     <div class="content d-flex justify-content-between align-items-center">
+      <div class="d-flex">
+       <div class="logo">
+        <a href="/">
+         <img src="./assets/images/logo-xedapdientroluc-3.png" alt="logo" />
+        </a>
+       </div>
+       <div class="main-menu d-lg-flex d-none">
+        <ul class="list_menu">
+         <li class="has-icon">
+          <a href=""> Engwe</a>
+         </li>
+         <li class="has-icon"><a href="">Zhengbu</a></li>
+         <li class="has-icon"><a href="">Himo</a></li>
+         <li class="has-icon"><a href="">Ado</a></li>
+         <li class="has-icon"><a href="">Scooter NineBot</a></li>
+         <li><a href="">Liên hệ</a></li>
+         <li><a href="">Tin tức</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="feature">
+       <div class="search-bar">
+        <form>
+         <div>
+          <input type="text" name="search" placeholder="Bạn tìm gì...?" autocomplete="off" />
+          <button type="submit" class="search_btn"><img src="./assets/images/icon-seachs.png" /></button>
+         </div>
+        </form>
+       </div>
+       <a href="" class="btn-cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- header mobile -->
+   <div class="header_middle header_middle_mobile d-flex d-xl-none align-items-center">
+    <div class="container-fluid">
+     <div class="content d-flex justify-content-between align-items-center">
+      <div class="logo-mobile">
+       <a class="/">
+        <img src="./assets/images/logo-mobile-1.png" alt="logo" />
+       </a>
+      </div>
+      <div class="search-bar">
+       <form>
+        <div>
+         <input type="text" name="search" placeholder="Bạn tìm gì...?" autocomplete="off" />
+         <button type="submit" class="search_btn"><img src="./assets/images/icon-seachs.png" /></button>
+        </div>
+       </form>
+      </div>
+      <div class="feature-mobile d-flex">
+       <a href="" class="btn-cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+       </a>
+       <div id="btn-hamburger" class="btn-menu-hamburger">
+        <i class="fa fa-bars"></i>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <aside class="menu-aside-page">
+   <div class="backdrop"></div>
+   <div class="menu-aside">
+    <div class="primary-menu-container">
+     <h4 class="text-center">Menu</h4>
+     <ul id="primary-menu-list" class="menu-wrapper">
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei
+       </a>
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
+       <a href="#">Liên hệ</a>
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
+       <a href="#">Tin tức</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </aside>
+  <main class="list-news-page">
+   <div class="breacrumb">
+    <div class="container-fluid">
+     <ul class="d-flex flex-wrap">
+      <li>
+       <a href="/">Trang chủ</a>
+      </li>
+      <li>
+       <span>Tin mới nhất</span>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <section class="list-news">
+    <div class="container-fluid">
+     <div class="title-generals">
+      <h2>Tin mới nhất</h2>
+     </div>
+     <div class="list_news__contents">
+      <div class="new_content">
+       <div class="news_hot">
+        <div class="news_hot__contents">
+         <div class="item">
+          <a href="">
+           <div class="image">
+            <img src="./assets/images/anh-bai-viet-thang-tam-medium.jpg" />
+           </div>
+          </a>
+          <div class="info">
+           <a href="">
+            <div class="name">
+             <h3>Tổng kết bán hàng tháng 8 của cửa hàng xedapdientroluc.vn</h3>
+            </div>
+            <div class="infomation">
+             <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Phạm Linh </span></div>
+             <div class="date"><img src="./assets/images/calendar.png" />11:00:00 AM 27/08/2024</div>
+            </div>
+            <div class="description">
+             <p>Một tháng nữa lại đi qua. Cùng xedapdientroluc.vn tổng kết lại những thành quả đã đạt được trong tháng 8 này nhé . Cửa hàng chúng tôi rất vui vì mỗi ngày có thêm nhiều khách hàng mới đến với ...</p>
+            </div>
+           </a>
+           <div class="view_detail"><a>Xem thêm</a></div>
+          </div>
+         </div>
+         <div class="item">
+          <a href="">
+           <div class="image">
+            <img src="./assets/images/anh-minh-hoa-1-1-1-medium.jpg" />
+           </div>
+          </a>
+          <div class="info">
+           <a href="">
+            <div class="name">
+             <h3>NHỮNG TRÁI CÂY NGƯỜI ĐẠP XE NÊN ĂN</h3>
+            </div>
+            <div class="infomation">
+             <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> nguyễn văn thắng </span></div>
+             <div class="date"><img src="./assets/images/calendar.png" />10:00:00 AM 26/08/2024</div>
+            </div>
+            <div class="description">
+             <p>Việc duy trì một chế độ ăn uống lành mạnh và cân bằng là yếu tố quan trọng đối với sức khỏe của người chạy xe đạp. Không chỉ giúp cung cấp năng lượng, các loại thực phẩm như hoa quả còn đóng vai trò ...</p>
+            </div>
+           </a>
+           <div class="view_detail"><a href=""> </a><a>Xem thêm</a></div>
+          </div>
+         </div>
+         <div class="item">
+          <a href="">
+           <div class="image">
+            <img src="./assets/images/anh-minh-hoa-1-1-medium.jpg" />
+           </div>
+          </a>
+          <div class="info">
+           <a href="">
+            <div class="name">
+             <h3>20 LỢI ÍCH KHI SỬ DỤNG XE ĐẠP ĐIỆN TRỢ LỰC</h3>
+            </div>
+            <div class="infomation">
+             <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> nguyễn văn thắng </span></div>
+             <div class="date"><img src="./assets/images/calendar.png" />12:00:00 PM 13/08/2024</div>
+            </div>
+            <div class="description">
+             <p>Xe đạp điện trợ lực đang trở thành xu hướng mới trong giao thông đô thị, mang lại nhiều lợi ích vượt trội về tiết kiệm chi phí, bảo vệ môi trường và nâng cao chất lượng cuộc sống. Dưới đây là 20 ...</p>
+            </div>
+           </a>
+           <div class="view_detail"><a>Xem thêm</a></div>
+          </div>
+         </div>
+         <div class="item">
+          <a href="">
+           <div class="image">
+            <img src="./assets/images/anh-bai-viet-1-medium.jpg" />
+           </div>
+          </a>
+          <div class="info">
+           <a href="">
+            <div class="name">
+             <h3>Thế Nào Là Xe Đạp Điện Trợ Lực? Cùng Tìm Hiểu Cách Vận Hành</h3>
+            </div>
+            <div class="infomation">
+             <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Phạm Linh </span></div>
+             <div class="date"><img src="./assets/images/calendar.png" />14:00:00 PM 07/08/2024</div>
+            </div>
+            <div class="description">
+             <p>Có rất nhiều người hiểu sai cho rằng xe đạp điện và xe trợ lực điện giống nhau. Tuy nhiên xe đạp điện trợ lực có cấu tạo và cách vận hành khác hơn xe điện nhiều. Đọc bài viết dưới đây để biết ...</p>
+            </div>
+           </a>
+           <div class="view_detail"><a href=""> </a><a>Xem thêm</a></div>
+          </div>
+         </div>
+         <div class="item">
+          <a href="">
+           <div class="image">
+            <img src="./assets/images/anh-bia-engwe-pro-2-0-1-medium.png" />
+           </div>
+          </a>
+          <div class="info">
+           <a href="">
+            <div class="name">
+             <h3>XE ĐẠP TRỢ LỰC ENGWE PRO 2.0 PHIÊN BẢN MỚI NHẤT</h3>
+            </div>
+            <div class="infomation">
+             <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> nguyễn văn thắng </span></div>
+             <div class="date"><img src="./assets/images/calendar.png" />10:00:00 AM 05/08/2024</div>
+            </div>
+            <div class="description">
+             <p>Xe đạp điện trợ lực Engwe Pro 2.0 đang làm mưa làm gió trên thị trường Châu&nbsp; Âu với phiên bản mới nhất của mình. Nay đã có mặt tại Việt Nam ở cửa hàng Xe Đạp Điện Trợ Lực, Engwe Pro 2.0 ...</p>
+            </div>
+           </a>
+           <div class="view_detail"><a>Xem thêm</a></div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="list_item_new">
+        <div class="item">
+         <div class="image">
+          <a href="">
+           <img src="./assets/images/z5673528540620-3a2aaea15801e93b9ce2488138e8386c-medium.jpg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="https://xedapdientroluc.vn/tin-tuc/uu-va-nhuoc-diem-xe-dap-tro-luc.html">
+            <h3>Ưu và nhược điểm xe đạp trợ lực</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Khánh Duy </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />00:00:00 AM 31/07/2024</div>
+          </div>
+          <div class="description">
+           <p>Là một dòng xe mới xuất hiện trên thị trường, xe đạp trợ lực vẫn đang là một dấu hỏi chấm rất lớn với người dân Việt Nam nói chung và cộng động yêu xe đạp nói riêng. Với cấu tạo phức tạp hơn những ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="https://xedapdientroluc.vn/tin-tuc/uu-va-nhuoc-diem-xe-dap-tro-luc.html">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+        <div class="item">
+         <div class="image">
+          <a href="https://xedapdientroluc.vn/tin-tuc/xe-dap-tro-luc-dien-gap-gon-phuong-tien-khong-the-thieu-cho-moi-chuyen-di.html">
+           <img src="https://sudospaces.com/xedapdientroluc/2024/05/xe-dap-dien-tro-luc-engwe-x20-medium.jpg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="https://xedapdientroluc.vn/tin-tuc/xe-dap-tro-luc-dien-gap-gon-phuong-tien-khong-the-thieu-cho-moi-chuyen-di.html">
+            <h3>XE ĐẠP TRỢ LỰC ĐIỆN GẤP GỌN PHƯƠNG TIỆN KHÔNG THỂ THIẾU CHO MỖI CHUYẾN ĐI</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Khánh Duy </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />00:00:00 AM 27/07/2024</div>
+          </div>
+          <div class="description">
+           <p>Xe đạp trợ lực điện gấp gọn phương tiện không thể thiếu cho mỗi chuyến đi trong mỗi chuyến đi du lịch của gia đình bạn. Hãy tưởng tượng mỗi chuyến đi bạn chỉ có một phương tiện duy nhất là chiếc ô ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+        <div class="item">
+         <div class="image">
+          <a href="">
+           <img src="./assets/images/anh-bai-viet-thang-bay-medium.jpg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="">
+            <h3>Tổng kết bán hàng tháng 7 của xedapdientroluc.vn</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Phạm Linh </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />11:00:00 AM 26/07/2024</div>
+          </div>
+          <div class="description">
+           <p>Xin chào mọi người, lại là bản tin tổng kết bán hàng của xedapdientroluc.vn. Trong tháng bảy cửa hàng đã gặt hái được nhiều kết quả cũng như có thêm nhiều khách hàng mới đến với cửa hàng.&nbsp;&nbsp; ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+        <div class="item">
+         <div class="image">
+          <a href="">
+           <img src="./assets/images/z5537598262855-26aa21c9540fb3a095fa788b378fa247-medium.jpg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="https://xedapdientroluc.vn/tin-tuc/off-road-voi-xe-dien-tro-luc-co-phai-y-kien-hay.html">
+            <h3>Offroad với xe điện trợ lực có phải ý kiến hay</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Khánh Duy </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />11:00:00 AM 25/07/2024</div>
+          </div>
+          <div class="description">
+           <p>&nbsp; Trong những năm gần đây, xe đạp địa hình trợ lực điện đã trở thành một xu hướng phổ biến đối với những người yêu thích thể thao và giải trí. Sự kết hợp giữa tính năng truyền thống của xe ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="https://xedapdientroluc.vn/tin-tuc/off-road-voi-xe-dien-tro-luc-co-phai-y-kien-hay.html">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+        <div class="item">
+         <div class="image">
+          <a href="https://xedapdientroluc.vn/tin-tuc/zhengbu-x6-lieu-xe-da-tot-hay-chua-tot.html">
+           <img src="./assets/images/1324-medium.jpeg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="https://xedapdientroluc.vn/tin-tuc/zhengbu-x6-lieu-xe-da-tot-hay-chua-tot.html">
+            <h3>Zhengbu X6 liệu xe đã tốt hay chưa tốt?</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Khánh Duy </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />00:00:00 AM 24/07/2024</div>
+          </div>
+          <div class="description">
+           <p>Xe đạp trợ lực đã trở thành một phương tiện di chuyển phổ biến trong những năm gần đâynhờ vào sự tiện lợi và thân thiện với môi trường. Trong số các thương hiệu nổi tiếng, Zhengbu đã khẳng định vị ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="https://xedapdientroluc.vn/tin-tuc/zhengbu-x6-lieu-xe-da-tot-hay-chua-tot.html">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+        <div class="item">
+         <div class="image">
+          <a href="https://xedapdientroluc.vn/tin-tuc/vi-sao-ban-nen-su-dung-xe-dap-dien-tro-luc.html">
+           <img src="./assets/images/xe-dap-2-medium.jpg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="https://xedapdientroluc.vn/tin-tuc/vi-sao-ban-nen-su-dung-xe-dap-dien-tro-luc.html">
+            <h3>Vì Sao Bạn Nên Sử Dụng Xe Đạp Điện Trợ Lực</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> nguyễn văn thắng </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />11:00:00 AM 20/07/2024</div>
+          </div>
+          <div class="description">
+           <p>Xe đạp điện trợ lực đang trở thành một xu hướng phổ biến trên toàn thế giới và gần đây Việt Nam cũng đang được nhiều người lựa chọn là phương tiện di chuyển, đặc biệt là trong các đô thị lớn. Với sự ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="https://xedapdientroluc.vn/tin-tuc/vi-sao-ban-nen-su-dung-xe-dap-dien-tro-luc.html">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+        <div class="item">
+         <div class="image">
+          <a href="https://xedapdientroluc.vn/tin-tuc/dap-xe-dap-tro-luc-se-co-nhung-loi-ich-gi.html">
+           <img src="./assets/images/3-medium.jpg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="https://xedapdientroluc.vn/tin-tuc/dap-xe-dap-tro-luc-se-co-nhung-loi-ich-gi.html">
+            <h3>ĐẠP XE ĐẠP TRỢ LỰC SẼ CÓ NHỮNG LỢI ÍCH GÌ</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> nguyễn văn thắng </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />11:00:00 AM 14/07/2024</div>
+          </div>
+          <div class="description">
+           <p>Trong những năm gần đây, xe đạp trợ lực đã trở thành một phương tiện giao thông phổ biến và được nhiều người ưa chuộng. Với sự kết hợp giữa công nghệ tiên tiến và tính tiện lợi, xe đạp trợ lực không ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+        <div class="item">
+         <div class="image">
+          <a href="">
+           <img src="./assets/images/nhr-bia-bai-viet-medium.jpg" />
+          </a>
+         </div>
+         <div class="info">
+          <div class="name">
+           <a href="">
+            <h3>Tổng kết bán hàng tháng 6 của cửa hàng xedapdientroluc.vn</h3>
+           </a>
+          </div>
+          <div class="infomation">
+           <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Phạm Linh </span></div>
+           <div class="date"><img src="./assets/images/calendar.png" />07:00:00 AM 29/06/2024</div>
+          </div>
+          <div class="description">
+           <p>&nbsp; Vẫn lại là một tháng mà cửa hàng xedapdientroluc.vn gặt hái được nhiêù&nbsp; kết quả như mong đợi. Rất cảm ơn tất cả những khách hàng đã đồng hành, tin tưởng sử dụng sản phẩm của chúng tôi trong ...</p>
+          </div>
+          <div class="view_detail">
+           <a href="">Xem thêm</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="paginate">
+        <ul class="pagination" role="navigation">
+         <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+          <span class="page-link" aria-hidden="true">‹</span>
+         </li>
+
+         <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+         <li class="page-item"><a class="page-link" href="">2</a></li>
+         <li class="page-item"><a class="page-link" href="">3</a></li>
+         <li class="page-item"><a class="page-link" href="">4</a></li>
+         <li class="page-item"><a class="page-link" href="">5</a></li>
+         <li class="page-item"><a class="page-link" href="">6</a></li>
+         <li class="page-item"><a class="page-link" href="">7</a></li>
+         <li class="page-item"><a class="page-link" href="">8</a></li>
+
+         <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+
+         <li class="page-item"><a class="page-link" href="">11</a></li>
+         <li class="page-item"><a class="page-link" href="">12</a></li>
+
+         <li class="page-item">
+          <a class="page-link" href="" rel="next" aria-label="Next »">›</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="new_sidebar">
+        <div class="title-generals">
+            <h2>Tin xem nhiều</h2>
+          </div>
+       <div class="sidebar_content">
+        <div class="item">
+         <a href="">
+          <div class="image">
+           <img src="./assets/images/so-sanh-dong-co-medium.jpg" />
+          </div>
+         </a>
+         <div class="info">
+          <a href="">
+           <div class="name">
+            <h3>Động cơ trục sau và động cơ trục giữa: Đâu là lựa chọn tốt nhất ?</h3>
+           </div>
+           <div class="infomation">
+            <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Phạm Linh </span></div>
+            <div class="date"><img src="./assets/images/calendar.png" />06:00:00 AM 12/01/2023</div>
+           </div>
+           <div class="description">
+            <p>Động cơ trục sau vs Động cơ trục giữa Ưu nhược điểm và lựa chọn của bạn Khi bạn lựa chọn một chiếc xe đạp cho mình, sự đa dạng giữa các mẫu xe luôn là thứ làm bạn phải đau đầu. Tuy ...</p>
+           </div>
+          </a>
+          <div class="view_detail"><a>Xem thêm</a></div>
+         </div>
+        </div>
+        <div class="item">
+         <a href="">
+          <div class="image">
+           <img src="./assets/images/z4099070234023-4d9f1a534184bc8bd6327092195dfb0d-medium.jpg" />
+          </div>
+         </a>
+         <div class="info">
+          <a href="">
+           <div class="name">
+            <h3>Xe đạp điện trợ lực ENGWE của nước nào? Địa chỉ mua xe uy tín ở đâu?</h3>
+           </div>
+           <div class="infomation">
+            <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Phạm Linh </span></div>
+            <div class="date"><img src="./assets/images/calendar.png" />09:00:00 AM 10/02/2023</div>
+           </div>
+           <div class="description">
+            <p>Mục lục Xe đạp điện trợ lực ENGWE của nước nào? Có tốt không? Địa chỉ nào mua xe chính hãng uy tín? ENGWE hãng xe đạp với những công nghệ cao cấp Địa chỉ nào mua Xe Đạp Điện Trợ ...</p>
+           </div>
+          </a>
+          <div class="view_detail"><a>Xem thêm</a></div>
+         </div>
+        </div>
+        <div class="item">
+         <a href="">
+          <div class="image">
+           <img src="./assets/images/5-ly-do-nen-mua-xe-dap-dien-tro-luc-medium.jpg" />
+          </div>
+         </a>
+         <div class="info">
+          <a href="">
+           <div class="name">
+            <h3>5 Lý do mà bạn nên mua ngay Xe Đạp Điện Trợ Lực?</h3>
+           </div>
+           <div class="infomation">
+            <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Xedapdientroluc.vn </span></div>
+            <div class="date"><img src="./assets/images/calendar.png" />20:00:00 PM 08/05/2023</div>
+           </div>
+           <div class="description">
+            <p>5 Lý do mà bạn nên mua ngay Xe Đạp Điện Trợ Lực ? Gần đây, Xe Đạp Điện Trợ Lực là một phương tiện được yêu thích và sử dụng rất rộng rãi bởi nó có khả năng di chuyển quãng đường dài h ơn ...</p>
+           </div>
+          </a>
+          <div class="view_detail"><a>Xem thêm</a></div>
+         </div>
+        </div>
+        <div class="item">
+         <a href="">
+          <div class="image">
+           <img src="./assets/images/xe-dap-dien-xiaomi-himo-c26-viomivietnam-1-1-medium.jpg" />
+          </div>
+         </a>
+         <div class="info">
+          <a href="">
+           <div class="name">
+            <h3>Đánh giá chi tiết Xe Đạp Điện Trợ Lực Xiaomi Himo C26</h3>
+           </div>
+           <div class="infomation">
+            <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Xedapdientroluc.vn </span></div>
+            <div class="date"><img src="./assets/images/calendar.png" />12:00:00 PM 06/09/2022</div>
+           </div>
+           <div class="description">
+            <p>Đánh giá chi tiết Xe Đạp Điện Xiaomi Himo C26 –&nbsp; Chiếc xe của tương lai - Giá êm ái Nếu bạn đã phát chán những dòng xe đạp điện truyền thống với kích thước cồng kềnh, dung lượng pin yếu, ...</p>
+           </div>
+          </a>
+          <div class="view_detail"><a>Xem thêm</a></div>
+         </div>
+        </div>
+        <div class="item">
+         <a href="">
+          <div class="image">
+           <img src="./assets/images/review-top-3-ma-u-xe-da-p-die-n-tro-lu-c-engwe-ba-n-cha-y-nha-t-hie-n-nay-1-medium.jpg" />
+          </div>
+         </a>
+         <div class="info">
+          <a href="">
+           <div class="name">
+            <h3>Review TOP 3 mẫu Xe Đạp Điện Trợ Lực Engwe Bán Chạy Nhất Hiện Nay !!!</h3>
+           </div>
+           <div class="infomation">
+            <div class="author"><i class="fa fa-user" aria-hidden="true"></i><span> Xedapdientroluc.vn </span></div>
+            <div class="date"><img src="./assets/images/calendar.png" />00:00:00 AM 20/06/2023</div>
+           </div>
+           <div class="description">
+            <p>Review TOP 3 mẫu Xe Đạp Điện Trợ Lực Engwe Bán Chạy Nhất Hiện Nay !!! Xã hội phát triển, con người ngày càng chú trọng nhiều đến vấn đề sức khoẻ. Việc sử Xe Đạp điện Trợ Lực thay thế xe ...</p>
+           </div>
+          </a>
+          <div class="view_detail"><a>Xem thêm</a></div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="infomation_us d-lg-block d-none">
+    <div class="container-fluid">
+     <div class="infomation_us__contents">
+      <div class="item">
+       <div class="image">
+        <img src="./assets/images/union_1.png" alt="xedapdientroluc" />
+        <p>Lợi ích chỉ có ở<br />XEDAPDIENTROLUC</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/uy-tin.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">CAM KẾT</p>
+        <p class="des">Uy tín là vàng</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/van-chuyen.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">VẬN CHUYỂN HOẢ TỐC</p>
+        <p class="des">Ship COD toàn quốc</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/ho-tro.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">Trả góp lãi suất 0%</p>
+        <p class="des">Thanh toán Online dễ dàng</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/tra-gop-0.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">Hỗ trợ trọn đời</p>
+        <p class="des">Tư vấn miễn phí</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="footer-pc d-lg-block d-none">
+    <div class="container-fluid">
+     <div class="logo_foot">
+      <div class="image">
+       <a href="/"><img src="./assets/images/xedapdientroluc.png" /></a>
+      </div>
+     </div>
+     <div class="footer__content">
+      <div class="item information">
+       <div class="title_foot">
+        <p class="name_company">CÔNG TY TRÁCH NHIỆM HỮU HẠN GREEN BIKE <br /><br /></p>
+        <p>Giấy chứng nhận đăng ký kinh doanh số: 0110209808, ngày cấp: 16/12/2022, nơi cấp: Sở kế hoạch và đầu tư Hà Nội</p>
+        <br /><br />
+        <p></p>
+       </div>
+       <div class="item_content">
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Giờ mở cửa:</span>
+         <span>8:30 AM - 21:00 PM</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Địa chỉ:</span>
+         <span>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Địa chỉ:</span>
+         <span>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline:</span>
+         <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline:</span>
+         <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline Kỹ Thuật TP.Hà Nội:</span>
+         <span>0913.05.4444</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline Kỹ Thuật TP.Hồ Chí Minh:</span>
+         <span>0797.05.1234</span>
+        </p>
+       </div>
+      </div>
+      <div class="item for-us">
+       <div class="title_foot">
+        <p>Dành cho khách hàng</p>
+       </div>
+       <div class="item_content">
+        <ul>
+         <li><a rel="follow" href="">Hướng dẫn thanh toán</a></li>
+         <li><a rel="follow" href="">Hướng dẫn mua hàng từ xa</a></li>
+         <li><a rel="follow" href="">Trả góp qua thẻ tín dụng</a></li>
+         <li><a rel="follow" href="">Chính sách vận chuyển giao nhận</a></li>
+         <li><a rel="follow" href="">Chính sách đổi trả hàng hóa</a></li>
+         <li><a rel="follow" href="">Chính sách bảo mật thông tin</a></li>
+         <li><a rel="follow" href="">Chính sách kiểm hàng</a></li>
+         <li><a rel="follow" href="">Chính sách bảo hành </a></li>
+         <li><a rel="follow" href="">Giới thiệu</a></li>
+         <li><a rel="follow" href="">Liên hệ </a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="item conect_me">
+       <div class="title_foot">
+        <p>Kết nối với chúng tôi</p>
+       </div>
+       <div class="item_content">
+        <div
+         class="fb-page fb_iframe_widget"
+         data-href="https://www.facebook.com/xedienxiaomihimo"
+         data-tabs="timeline"
+         data-width=""
+         data-height="250"
+         data-small-header="true"
+         data-adapt-container-width="true"
+         data-hide-cover="false"
+         data-show-facepile="true"
+         fb-xfbml-state="rendered"
+         fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=3082917358395842&amp;container_width=272&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxedienxiaomihimo&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width="
+        >
+         <span style="vertical-align: bottom; width: 272px; height: 250px"
+          ><iframe
+           name="ffa89af16d682d3de"
+           width="1000px"
+           height="250px"
+           data-testid="fb:page Facebook Social Plugin"
+           title="fb:page Facebook Social Plugin"
+           frameborder="0"
+           allowtransparency="true"
+           allowfullscreen="true"
+           scrolling="no"
+           allow="encrypted-media"
+           src="https://www.facebook.com/v9.0/plugins/page.php?adapt_container_width=true&amp;app_id=3082917358395842&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df86669b7bc71a724b%26domain%3Dxedapdientroluc.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fxedapdientroluc.vn%252Ffec97d3a07ca84a56%26relation%3Dparent.parent&amp;container_width=272&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxedienxiaomihimo&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width="
+           style="border: none; visibility: visible; width: 272px; height: 250px"
+           class=""
+          ></iframe
+         ></span>
+        </div>
+       </div>
+      </div>
+      <div class="item other">
+       <div class="title_foot">
+        <p>Thông tin thanh toán</p>
+       </div>
+       <div class="protect" style="margin-top: 5px; line-height: 20px">
+        <p class="title"></p>
+        <div class="protect-item">
+         <p>ACB - 3479996868 - NGUYEN THI NHAN</p>
+         <p>243/1/22B Tô Hiến Thành, Phường 13, Quận 10, TP. HCM</p>
+        </div>
+        <div class="protect-item">
+         <p>MB bank - 36905886868 - HO THI PHUONG HOA</p>
+         <p>109 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
+        </div>
+       </div>
+       <div class="title_foot">
+        <p>Chứng nhận</p>
+       </div>
+       <div class="item_content">
+        <div class="protect">
+         <div class="image">
+          <img src="/assets/images/protected.png" />
+         </div>
+         <div class="image">
+          <a href="http://online.gov.vn/Home/WebDetails/117354"><img src="./assets/images/dathongbao-1.png" width="195px" /></a>
+         </div>
+        </div>
+        <div class="card_pay">
+         <div class="wrap card_pay__title">Hỗ trợ thanh toán</div>
+         <div class="wrap card_pay__image">
+          <ul>
+           <li><img src="./assets/images/visa.png" /></li>
+           <li><img src="./assets/images/master_card.png" /></li>
+           <li><img src="./assets/images/atm.png" /></li>
+           <li><img src="./assets/images/tien-mat.png" /></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <div class="container-fluid">
+      <div class="copy-right">
+       <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2020 XEDAPDIENTROLUC.VN. All rights reserved.</p>
+       <p>Mã số thuế :MST: 0110209808</p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-mobile d-lg-none">
+    <div class="infomation-us-mobile">
+     <div class="item hotline-item">
+      <p>Hotline tư vấn</p>
+      <a href="">Hà Nội: 0707.10.9999 - 0798.67.5555</a>
+      <a href="">Hà Nội: 0707.10.9999 - 0798.67.5555</a>
+     </div>
+     <div class="item hotline-item">
+      <p>Hotline Kỹ Thuật TP.Hà Nội</p>
+      <a href="">0913.05.4444</a>
+      <p>Hotline Kỹ Thuật TP.Hồ Chí Minh</p>
+      <a href="">0797.05.1234</a>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/uy-tin.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">CAM KẾT</p>
+       <p class="des">Uy tín là vàng</p>
+      </div>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/van-chuyen.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">VẬN CHUYỂN HOẢ TỐC</p>
+       <p class="des">Ship COD toàn quốc</p>
+      </div>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/ho-tro.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">Trả góp lãi suất 0%</p>
+       <p class="des">Thanh toán Online dễ dàng</p>
+      </div>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/tra-gop-0.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">Hỗ trợ trọn đời</p>
+       <p class="des">Tư vấn miễn phí</p>
+      </div>
+     </div>
+     <div class="item info-more">
+      <div class="btn-show btn-show-info-more">Thông tin thêm<i class="fa fa-caret-down"></i></div>
+      <div class="info-more-content" style="display: none">
+       <ul>
+        <li><a href="" title="">Hướng dẫn thanh toán</a></li>
+        <li><a href="" title="">Hướng dẫn mua hàng từ xa</a></li>
+        <li><a href="" title="">Trả góp qua thẻ tín dụng</a></li>
+        <li><a href="" title="">Chính sách vận chuyển giao nhận</a></li>
+        <li><a href="" title="">Chính sách đổi trả hàng hóa</a></li>
+        <li><a href="" title="">Chính sách bảo mật thông tin</a></li>
+        <li><a href="" title="">Chính sách kiểm hàng</a></li>
+        <li><a href="" title="">Chính sách bảo hành </a></li>
+        <li><a href="" title="">Giới thiệu</a></li>
+        <li><a href="" title="">Liên hệ </a></li>
+       </ul>
+      </div>
+     </div>
+     <div class="item info-more">
+      <div class="btn-show btn-show-for-customer">Dành cho khách hàng <i class="fa fa-caret-down"></i></div>
+      <div class="info-more-content" style="display: none">
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Giờ mở cửa:</span><br />
+        <span>8:30 AM - 21:00 PM</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Địa chỉ:</span>
+        <span>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Địa chỉ:</span>
+        <span>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Hotline:</span>
+        <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Hotline:</span>
+        <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Hotline Kỹ Thuật TP.Hà Nội:</span><br />
+        <span>0913.05.4444</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Hotline Kỹ Thuật TP.Hồ Chí Minh:</span><br />
+        <span>0797.05.1234</span>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="main-footer">
+     <div class="info-payment text-center">
+      <p>Thông tin thanh toán</p>
+      <div class="account-address">
+       <p>ACB - 3479996868 - NGUYEN THI NHAN</p>
+       <p>243/1/22B Tô Hiến Thành, Phường 13, Quận 10, TP. HCM</p>
+      </div>
+      <div class="account-address">
+       <p>MB bank - 36905886868 - HO THI PHUONG HOA</p>
+       <p>109 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
+      </div>
+     </div>
+     <div class="certificate">
+      <div class="image">
+       <img src="./assets/images/protected.png" alt="DMCA" />
+      </div>
+      <div class="image">
+       <a href="">
+        <img src="./assets/images/dathongbao-1.png" alt="Bộ công thương" />
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="copy_right">
+     <p>Mã số thuế :MST: 0110209808</p>
+     <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2020 XEDAPDIENTROLUC.VN. All rights reserved.</p>
+    </div>
+   </div>
+  </footer>
+  <div class="btn-back-to-top">
+   <div class="d-lg-flex d-none icon-pc">
+    <i class="fa fa-chevron-up"></i>
+   </div>
+   <div class="d-lg-none icon-mobile">
+    <img src="./assets/images/icon_backtop.png" alt="icon" />
+   </div>
+  </div>
+  <div class="menu-sns-fixed">
+   <ul class="list-menu-sns-fixed">
+    <li class="btn-menu-hambg d-lg-none">
+     <div>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <p>Menu</p>
+     </div>
+    </li>
+    <li class="call">
+     <a href="">
+      <img src="./assets/images/call-icon.png" alt="icon" />
+      <p>Hotline</p>
+     </a>
+    </li>
+    <li class="messenger">
+     <a href="">
+      <img src="./assets/images/fb-icon.png" alt="icon" />
+      <p>Chat FB</p>
+     </a>
+    </li>
+    <li class="zalo">
+     <a href="">
+      <img src="./assets/images/zalo-icon.png" alt="icon" />
+      <p>Zalo</p>
+     </a>
+    </li>
+    <li class="showroom d-lg-block d-none">
+     <a href="">
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <p>Showroom</p>
+     </a>
+    </li>
+   </ul>
+  </div>
+ </body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- booststrap -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+ <script src="./assets/js/index.js"></script>
+</html>
