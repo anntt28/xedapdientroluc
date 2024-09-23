@@ -35,6 +35,7 @@ $(function () {
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
+      clickable: true
     }
   });
   $(window).scroll(function () {
