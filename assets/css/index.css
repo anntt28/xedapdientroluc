@@ -9414,7 +9414,7 @@ input::placeholder, .modal textarea::placeholder {
   border-radius: initial;
 }
 
-.header-paga {
+.header-page {
   display: flex;
   flex-direction: column;
 }
