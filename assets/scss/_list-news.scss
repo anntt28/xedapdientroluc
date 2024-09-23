@@ -10,13 +10,13 @@
 .list_news__contents {
  width: 100%;
  margin-bottom: 48px;
- @include minWidth(992px) {
+ @include minWidth(1200px) {
   display: flex;
   flex-wrap: wrap;
  }
  .new_content {
   width: 100%;
-  @include minWidth(992px) {
+  @include minWidth(1200px) {
    width: calc(100% - 410px);
    margin-right: 20px;
   }
@@ -250,7 +250,7 @@
  }
  .new_sidebar {
   width: 100%;
-  @include minWidth(992px) {
+  @include minWidth(1200px) {
    width: 390px;
   }
   .sidebar_content {

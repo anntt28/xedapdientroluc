@@ -10239,7 +10239,7 @@ input::placeholder, .modal textarea::placeholder {
   width: 100%;
   margin-bottom: 48px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .list_news__contents {
     display: flex;
     flex-wrap: wrap;
@@ -10248,7 +10248,7 @@ input::placeholder, .modal textarea::placeholder {
 .list_news__contents .new_content {
   width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .list_news__contents .new_content {
     width: calc(100% - 410px);
     margin-right: 20px;
@@ -10484,7 +10484,7 @@ input::placeholder, .modal textarea::placeholder {
 .list_news__contents .new_sidebar {
   width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .list_news__contents .new_sidebar {
     width: 390px;
   }
