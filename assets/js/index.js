@@ -106,18 +106,20 @@ $(function () {
       $(".header-bottom-mobile").removeClass("show-a");
     }
   });
-  document.getElementById("chooseFile").onchange = function () {
-    document.getElementById("chooseFile").value = this.value.replace("C:\\fakepath\\", "");
-  };
-
-  $("#chooseFile").bind("change", function () {
-    var filename = $("#chooseFile").val();
-    if (/^\s*$/.test(filename)) {
-      $(".file-upload").removeClass("active");
-      $("#noFile").text("No file chosen...");
-    } else {
-      $(".file-upload").addClass("active");
-      $("#noFile").text(filename.replace("C:\\fakepath\\", ""));
-    }
+  $('.detailed-description div').on('click', function(){
+    $(this).parent('.detailed-description .btn-view-all').toggleClass('active');
+    $(this).siblings('.detailed-description .content').toggleClass('active');
+  });
+  $("body").on("click", "*[data-scroll]", function (t) {
+    t.preventDefault(),
+      (id = $(this).data("scroll")),
+      (offset_top = $(this).data("top")),
+      checkEmpty(offset_top) ? (offset_top = $(id).offset().top) : (offset_top = $(id).offset().top - offset_top),
+      $("html, body").animate(
+        {
+          scrollTop: offset_top,
+        },
+        500
+      );
   });
 });
