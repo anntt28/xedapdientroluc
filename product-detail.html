@@ -1,874 +1,1417 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <title>Product detail</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Product detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+ </head>
 
-  <body>
-    <header class="header-page py-6 transition">
-      <div class="header_top">
-        <div class="container-fluid">
-          <div class="content d-flex justify-content-between">
-            <div class="item header_top__left">
-              <div class="info_sale">
-                <div class="dot">
-                  <div class="wave"></div>
-                </div>
-                <a>Xe Đạp Điện Trợ Lực đang trở thành xu hướng - Cảm ơn quý khách đã lựa chọn</a>
-              </div>
-            </div>
-            <div class="item header_top__right">
-              <div class="header_address">
-                <div class="icon"><img src="/assets/images/Vector.png" alt="icon" /></div>
-                <div class="number"><marquee scrollamount="2">109 Trần Duy Hưng, Cầu Giấy, Hà Nội và 243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</marquee></div>
-              </div>
-              <div class="hotline_head">
-                <div class="icon"><img src="/assets/images/bx_bxs-phone-call.png" alt="icon" /></div>
-                <div class="number"><a href="tel:0707.10.9999">0707.10.9999</a></div>
-              </div>
-            </div>
-          </div>
+ <body>
+  <header class="header-page py-6 transition">
+   <div class="header_top">
+    <div class="container-fluid">
+     <div class="content d-flex justify-content-between">
+      <div class="item header_top__left">
+       <div class="info_sale">
+        <div class="dot">
+         <div class="wave"></div>
         </div>
+        <a>Xe Đạp Điện Trợ Lực đang trở thành xu hướng - Cảm ơn quý khách đã lựa chọn</a>
+       </div>
       </div>
-      <!-- header pc -->
-      <div class="header_middle d-xl-flex d-none align-items-center">
-        <div class="container-fluid">
-          <div class="content d-flex justify-content-between align-items-center">
-            <div class="d-flex">
-              <div class="logo">
-                <a href="/">
-                  <img src="./assets/images/logo-xedapdientroluc-3.png" alt="logo" />
-                </a>
-              </div>
-              <div class="main-menu d-lg-flex d-none">
-                <ul class="list_menu">
-                  <li class="has-icon">
-                    <a href=""> Engwe</a>
-                  </li>
-                  <li class="has-icon"><a href="">Zhengbu</a></li>
-                  <li class="has-icon"><a href="">Himo</a></li>
-                  <li class="has-icon"><a href="">Ado</a></li>
-                  <li class="has-icon"><a href="">Scooter NineBot</a></li>
-                  <li><a href="">Liên hệ</a></li>
-                  <li><a href="/list-news.html">Tin tức</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature">
-              <div class="search-bar">
-                <form>
-                  <div>
-                    <input type="text" name="search" placeholder="Bạn tìm gì...?" autocomplete="off" />
-                    <button type="submit" class="search_btn"><img src="./assets/images/icon-seachs.png" /></button>
-                  </div>
-                </form>
-              </div>
-              <a href="" class="btn-cart">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+      <div class="item header_top__right">
+       <div class="header_address">
+        <div class="icon"><img src="/assets/images/Vector.png" alt="icon" /></div>
+        <div class="number"><marquee scrollamount="2">109 Trần Duy Hưng, Cầu Giấy, Hà Nội và 243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</marquee></div>
+       </div>
+       <div class="hotline_head">
+        <div class="icon"><img src="/assets/images/bx_bxs-phone-call.png" alt="icon" /></div>
+        <div class="number"><a href="tel:0707.10.9999">0707.10.9999</a></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- header pc -->
+   <div class="header_middle d-xl-flex d-none align-items-center">
+    <div class="container-fluid">
+     <div class="content d-flex justify-content-between align-items-center">
+      <div class="d-flex">
+       <div class="logo">
+        <a href="/">
+         <img src="./assets/images/logo-xedapdientroluc-3.png" alt="logo" />
+        </a>
+       </div>
+       <div class="main-menu d-lg-flex d-none">
+        <ul class="list_menu">
+         <li class="has-icon">
+          <a href=""> Engwe</a>
+         </li>
+         <li class="has-icon"><a href="">Zhengbu</a></li>
+         <li class="has-icon"><a href="">Himo</a></li>
+         <li class="has-icon"><a href="">Ado</a></li>
+         <li class="has-icon"><a href="">Scooter NineBot</a></li>
+         <li><a href="">Liên hệ</a></li>
+         <li><a href="/list-news.html">Tin tức</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="feature">
+       <div class="search-bar">
+        <form>
+         <div>
+          <input type="text" name="search" placeholder="Bạn tìm gì...?" autocomplete="off" />
+          <button type="submit" class="search_btn"><img src="./assets/images/icon-seachs.png" /></button>
+         </div>
+        </form>
+       </div>
+       <a href="" class="btn-cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- header mobile -->
+   <div class="header_middle header_middle_mobile d-flex d-xl-none align-items-center">
+    <div class="container-fluid">
+     <div class="content d-flex justify-content-between align-items-center">
+      <div class="logo-mobile">
+       <a class="/">
+        <img src="./assets/images/logo-mobile-1.png" alt="logo" />
+       </a>
+      </div>
+      <div class="search-bar">
+       <form>
+        <div>
+         <input type="text" name="search" placeholder="Bạn tìm gì...?" autocomplete="off" />
+         <button type="submit" class="search_btn"><img src="./assets/images/icon-seachs.png" /></button>
         </div>
+       </form>
       </div>
-      <!-- header mobile -->
-      <div class="header_middle header_middle_mobile d-flex d-xl-none align-items-center">
-        <div class="container-fluid">
-          <div class="content d-flex justify-content-between align-items-center">
-            <div class="logo-mobile">
-              <a class="/">
-                <img src="./assets/images/logo-mobile-1.png" alt="logo" />
-              </a>
-            </div>
-            <div class="search-bar">
-              <form>
-                <div>
-                  <input type="text" name="search" placeholder="Bạn tìm gì...?" autocomplete="off" />
-                  <button type="submit" class="search_btn"><img src="./assets/images/icon-seachs.png" /></button>
-                </div>
-              </form>
-            </div>
-            <div class="feature-mobile d-flex">
-              <a href="" class="btn-cart">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-              </a>
-              <div id="btn-hamburger" class="btn-menu-hamburger">
-                <i class="fa fa-bars"></i>
-              </div>
-            </div>
-          </div>
+      <div class="feature-mobile d-flex">
+       <a href="" class="btn-cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+       </a>
+       <div id="btn-hamburger" class="btn-menu-hamburger">
+        <i class="fa fa-bars"></i>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <aside class="menu-aside-page">
+   <div class="backdrop"></div>
+   <div class="menu-aside">
+    <div class="primary-menu-container">
+     <h4 class="text-center">Menu</h4>
+     <ul id="primary-menu-list" class="menu-wrapper">
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
         </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei
+       </a>
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+       <a href="#" class="text-menu">
+        <div class="icon">
+         <img src="./assets//images/2641824-1.png" alt="icon" />
+        </div>
+        Engwei</a
+       >
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
+       <a href="#">Liên hệ</a>
+      </li>
+      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
+       <a href="#">Tin tức</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </aside>
+  <main class="product-detail">
+   <div class="breadcrumb">
+    <div class="container-fluid">
+     <ul class="d-flex flex-wrap">
+      <li>
+       <a href="/">Trang chủ</a>
+      </li>
+      <li>
+       <a href="/">Xe Đạp Điện Trợ Lực Engwe</a>
+      </li>
+      <li>
+       <span>Xe Đạp Điện Trợ Lực Engwe Pro 2.0</span>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <section class="product-detail">
+    <div class="container-fluid">
+     <div class="product_detail-head">
+      <div class="name_product">
+       <h1>Xe Đạp Điện Trợ Lực Engwe Pro 2.0</h1>
       </div>
-    </header>
-    <aside class="menu-aside-page">
-      <div class="backdrop"></div>
-      <div class="menu-aside">
-        <div class="primary-menu-container">
-          <h4 class="text-center">Menu</h4>
-          <ul id="primary-menu-list" class="menu-wrapper">
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-              <a href="#" class="text-menu">
-                <div class="icon">
-                  <img src="./assets//images/2641824-1.png" alt="icon" />
-                </div>
-                Engwei</a
-              >
-            </li>
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-              <a href="#" class="text-menu">
-                <div class="icon">
-                  <img src="./assets//images/2641824-1.png" alt="icon" />
-                </div>
-                Engwei
-              </a>
-            </li>
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-              <a href="#" class="text-menu">
-                <div class="icon">
-                  <img src="./assets//images/2641824-1.png" alt="icon" />
-                </div>
-                Engwei</a
-              >
-            </li>
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-              <a href="#" class="text-menu">
-                <div class="icon">
-                  <img src="./assets//images/2641824-1.png" alt="icon" />
-                </div>
-                Engwei</a
-              >
-            </li>
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-              <a href="#" class="text-menu">
-                <div class="icon">
-                  <img src="./assets//images/2641824-1.png" alt="icon" />
-                </div>
-                Engwei</a
-              >
-            </li>
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-              <a href="#">Liên hệ</a>
-            </li>
-            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-              <a href="#">Tin tức</a>
-            </li>
+      <div class="review_product">
+       <div class="item info_review">
+        <div class="item_view">Lượt xem: 1899</div>
+        <div class="item_view">
+         <span class="title">Tình trạng:</span>
+         <span class="child active">Còn hàng</span>
+         <span class="child">Sắp ra mắt</span>
+         <span class="child">Tạm hết hàng</span>
+         <span class="child">Ngừng kinh doanh</span>
+        </div>
+       </div>
+       <div class="item">
+        <div class="vote_review">
+         <span class="vote_star">
+          <ul>
+           <li><i class="fa fa-star" aria-hidden="true"></i></li>
+           <li><i class="fa fa-star" aria-hidden="true"></i></li>
+           <li><i class="fa fa-star" aria-hidden="true"></i></li>
+           <li><i class="fa fa-star" aria-hidden="true"></i></li>
+           <li><i class="fa fa-star" aria-hidden="true"></i></li>
           </ul>
+         </span>
+         <span class="count_vote">(2 đánh giá)</span>
         </div>
+        <div class="share_social">
+         <div class="addthis_inline_share_toolbox_1hiz"></div>
+        </div>
+       </div>
       </div>
-    </aside>
-    <main class="product-detail">
-      <div class="breadcrumb">
-        <div class="container-fluid">
-          <ul class="d-flex flex-wrap">
-            <li>
-              <a href="/">Trang chủ</a>
-            </li>
-            <li>
-              <a href="/">Xe Đạp Điện Trợ Lực Engwe</a>
-            </li>
-            <li>
-              <span>Xe Đạp Điện Trợ Lực Engwe Pro 2.0</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <section class="product-detail">
-        <div class="container-fluid">
-          <div class="product_detail-head">
-            <div class="name_product">
-              <h1>Xe Đạp Điện Trợ Lực Engwe Pro 2.0</h1>
+     </div>
+     <div class="product_detail__body d-xl-flex">
+      <div class="product_detail__body__contents">
+       <div class="slide-thumbnail">
+        <div class="slider-thumbnail-product swiper-container">
+         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+           <div class="item">
+            <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
+            <div class="sticker">
+             <img src="./assets/images/doc-quyen.png" alt="image" />
             </div>
-            <div class="review_product">
-              <div class="item info_review">
-                <div class="item_view">Lượt xem: 1899</div>
-                <div class="item_view">
-                  <span class="title">Tình trạng:</span>
-                  <span class="child active">Còn hàng</span>
-                  <span class="child">Sắp ra mắt</span>
-                  <span class="child">Tạm hết hàng</span>
-                  <span class="child">Ngừng kinh doanh</span>
-                </div>
-              </div>
-              <div class="item">
-                <div class="vote_review">
-                  <span class="vote_star">
-                    <ul>
-                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                    </ul>
-                  </span>
-                  <span class="count_vote">(2 đánh giá)</span>
-                </div>
-                <div class="share_social">
-                  <div class="addthis_inline_share_toolbox_1hiz"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product_detail__body d-lg-flex">
-            <div class="product_detail__body__contents">
-              <div class="slide-thumbnail">
-                <div class="slider-thumbnail-product swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="item">
-                        <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
-                        <div class="sticker">
-                          <img src="./assets/images/doc-quyen.png" alt="image" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="item">
-                        <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
-                        <div class="sticker">
-                          <img src="./assets/images/doc-quyen.png" alt="image" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="item">
-                        <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
-                        <div class="sticker">
-                          <img src="./assets/images/doc-quyen.png" alt="image" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="item">
-                        <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
-                        <div class="sticker">
-                          <img src="./assets/images/doc-quyen.png" alt="image" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="btn-next-prev">
-                    <div class="swiper-button-next swiper-button-next-2">
-                      <i class="fa fa-caret-right"></i>
-                    </div>
-                    <div class="swiper-button-prev swiper-button-prev-2">
-                      <i class="fa fa-caret-left"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="button_action">
-                  <ul>
-                    <li class="button" data-scroll="product_features">
-                      <div class="icon">
-                        <i class="fa fa-picture-o" aria-hidden="true"></i>
-                      </div>
-                      <p>Thông số kĩ thuật</p>
-                    </li>
-                    <li class="button" data-scroll="product_other">
-                      <div class="icon">
-                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                      </div>
-                      <p>Sản phẩm cùng loại</p>
-                    </li>
-                    <li class="button" data-scroll="product_detail_more">
-                      <div class="icon">
-                        <i class="fa fa-inbox" aria-hidden="true"></i>
-                      </div>
-                      <p>Mô tả chi tiết</p>
-                    </li>
-                    <li class="button" data-scroll="comment_product">
-                      <div class="icon">
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                      </div>
-                      <p>Bình luận sản phẩm</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="description_short">
-                  <h6>Đặc điểm nổi bật</h6>
-                  <ul>
-                    <li>Động cơ lớn có thể peak lên 1200W, sử dụng cảm biến mô men xoắn lên đến 75Nm</li>
-                    <li>Bộ shimano 8 cấp chuyển động mượt mà</li>
-                    <li>Dung lượng pin lớn 52v16ah đáp ứng nhu cầu di chuyển thường xuyên của nhiều người</li>
-                    <li>Phanh thủy lực khi bóp tạo cảm giác nhẹ nhàng và an toàn khi di chuyển</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="infomation-product">
-                <div class="price">
-                  <span class="price_sale" data-pice="31.990.000 ₫">31.990.000 ₫</span>
-                  <span class="price_old"></span>
-                </div>
-                <div class="warranty">
-                  <label>Chế độ bảo hành</label>
-                  <select class="select_warranty_gold" id="select_warranty_gold" fdprocessedid="hafk58">
-                    <option value="0" data-price="0">Bảo hành mặc định</option>
-                  </select>
-                  <label><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-                </div>
-                <div class="box_promotion">
-                  <div class="image_title">
-                    <div class="image">
-                      <img src="./assets/images/promotion.png" />
-                      <p>Thông tin khuyến mại</p>
-                    </div>
-                  </div>
-                  <div class="box_promotion__content css-content">
-                    <p><strong>Ưu đãi khi mua hàng tại XEDAPDIENTROLUC:</strong></p>
-                    <p><span style="color: #0000ff">♦</span> Giá rẻ nhất Việt Nam</p>
-                    <p><span style="color: #0000ff">♦</span>&nbsp;Trả góp 0% qua thẻ tín dụng</p>
-                    <p><span style="color: #0000ff">♦</span> Bảo hành 15 tháng</p>
-                    <p><span style="color: #0000ff">♦</span>&nbsp;Hỗ trợ bảo dưỡng trọn đời</p>
-                    <p><span style="color: #0000ff">♦ </span>Công ty chịu&nbsp;mọi rủi ro trong quá trình vận chuyển</p>
-                    <p><span style="color: #0000ff">♦ </span>Ship hàng COD Toàn Quốc</p>
-                  </div>
-                </div>
-                <div class="box_action">
-                  <div class="btn btn-order">Mua ngay</div>
-                  <div class="btn btn-installment">
-                    <a href="">Mua trả góp</a>
-                  </div>
-                </div>
-                <div class="registration">
-                  <p>Để lại thông tin, XEDAPDIENTROLUC.VN sẽ gọi tư vấn cho bạn ngay !!!</p>
-                  <div class="form">
-                    <input type="hidden" name="product_id" value="64" />
-                    <input class="item" type="text" name="name" placeholder="Họ và Tên" autocomplete="off" fdprocessedid="joltaf" />
-                    <input class="item" type="text" name="phone" placeholder="Nhập số điện thoại" autocomplete="off" fdprocessedid="2f4l" />
-                    <a class="item" href="">Gọi cho tôi</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product_detail__body__sidebar">
-              <div class="info_general">
-                <div class="item">
-                  <div class="item_title">
-                    <div class="icon"><img src="./assets/images/bao-hanh.png" /></div>
-                    <div class="title"><b>CHẾ ĐỘ BẢO HÀNH</b></div>
-                  </div>
-                  <ul class="item_content css-content">
-                    <li><b>Thời gian bảo hành:</b> Bảo hành chính hãng 15 tháng</li>
-                    <li>Bảo hành các lỗi hư hỏng được xác định do lỗi kỹ thuật hoặc do lỗi của nhà sản xuất bao gồm: khung sườn, mô tơ, sạc điện và linh kiện phụ tùng.</li>
-                    <li>
-                      <b>Hỗ trợ bảo hành trọn đời</b>
-                    </li>
-                  </ul>
-                </div>
-                <div class="item">
-                  <div class="item_title">
-                    <div class="icon"><img src="./assets/images/cam-ket.png" /></div>
-                    <div class="title"><b>XEDAPDIENTROLUC CAM KẾT</b></div>
-                  </div>
-                  <ul class="item_content css-content">
-                    <li>Hàng chính hãng mới 100%</li>
-                    <li>Kiểm tra hàng trước khi thanh toán, bao mọi rủi ro trong quá trình vận chuyển</li>
-                    <li>Cam kết hài lòng khách hàng</li>
-                  </ul>
-                </div>
-                <div class="item">
-                  <div class="item_title">
-                    <div class="icon"><img src="./assets/images/logo-box.png" /></div>
-                    <div class="title"><b> KÈM THEO HỘP</b></div>
-                  </div>
-                  <ul class="item_content css-content">
-                    <li><b>Gồm có:</b> Xe đạp, Phiếu bảo hành, Sạc pin, Dè chắn bùn, Phụ kiện khách mua kèm nếu có</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="info_company">
-                <div class="info_company__title">Thông tin liên hệ:</div>
-                <div class="info_company__content">
-                  <ul>
-                    <li>
-                      <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                      Hotline:
-                      <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
-                    </li>
-                    <li>
-                      <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                      Hotline:
-                      <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
-                    </li>
-                    <li>
-                      <i class="fa fa-clock-o" aria-hidden="true"></i>
-                      <p>8:30 AM - 21:00 PM</p>
-                    </li>
-                    <li>
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                      <p>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</p>
-                    </li>
-                    <li>
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                      <p>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</p>
-                    </li>
-                    <li><i class="fa fa-map-marker" aria-hidden="true"></i><a target="_blank" href="">Xem chỉ đường tới cửa hàng</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="detailed-description">
-        <div class="container-fluid">
-          <div class="title-generals">
-            <h2>Mô tả chi tiết</h2>
-          </div>
-          <div class="content">
-            <h1 id="mcetoc_1i3stakhr0">
-              <strong><span style="font-family: arial, helvetica, sans-serif; color: #008080">Có gì thú vị để trải nghiệm trên chiếc Engwe Pro 2.0 bản nâng cấp này?</span></strong>
-            </h1>
-            <strong>Tstandard Lorem Ipsum passage, used since the 1500s </strong>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde
-              omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-              minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-              esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            </p>
-            <img src="./assets/images/dong-co-pro-2-0.jpg" alt="image" />
-            <strong>Tstandard Lorem Ipsum passage, used since the 1500s </strong>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde
-              omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-              minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-              esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            </p>
-          </div>
-          <div class="btn-view-all">
-            <div class="view-more">Xem thêm</div>
-            <div class="hidden-view">Thu gọn</div>
            </div>
-       </duiv>
-     </section>
-      <section class="infomation_us d-lg-block d-none">
-        <div class="container-fluid">
-          <div class="infomation_us__contents">
-            <div class="item">
-              <div class="image">
-                <img src="./assets/images/union_1.png" alt="xedapdientroluc" />
-                <p>Lợi ích chỉ có ở<br />XEDAPDIENTROLUC</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <img src="./assets/images/uy-tin.png" alt="image" />
-              </div>
-              <div class="title_detail">
-                <p class="title_name">CAM KẾT</p>
-                <p class="des">Uy tín là vàng</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <img src="./assets/images/van-chuyen.png" alt="image" />
-              </div>
-              <div class="title_detail">
-                <p class="title_name">VẬN CHUYỂN HOẢ TỐC</p>
-                <p class="des">Ship COD toàn quốc</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <img src="./assets/images/ho-tro.png" alt="image" />
-              </div>
-              <div class="title_detail">
-                <p class="title_name">Trả góp lãi suất 0%</p>
-                <p class="des">Thanh toán Online dễ dàng</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <img src="./assets/images/tra-gop-0.png" alt="image" />
-              </div>
-              <div class="title_detail">
-                <p class="title_name">Hỗ trợ trọn đời</p>
-                <p class="des">Tư vấn miễn phí</p>
-              </div>
-            </div>
           </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
+            <div class="sticker">
+             <img src="./assets/images/doc-quyen.png" alt="image" />
+            </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
+            <div class="sticker">
+             <img src="./assets/images/doc-quyen.png" alt="image" />
+            </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <img src="./assets/images/pro-2-0-6-large.jpg" alt="image" />
+            <div class="sticker">
+             <img src="./assets/images/doc-quyen.png" alt="image" />
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="btn-next-prev">
+          <div class="swiper-button-next swiper-button-next-2">
+           <i class="fa fa-caret-right"></i>
+          </div>
+          <div class="swiper-button-prev swiper-button-prev-2">
+           <i class="fa fa-caret-left"></i>
+          </div>
+         </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-pc d-lg-block d-none">
-        <div class="container-fluid">
-          <div class="logo_foot">
-            <div class="image">
-              <a href="/"><img src="./assets/images/xedapdientroluc.png" /></a>
-            </div>
-          </div>
-          <div class="footer__content">
-            <div class="item information">
-              <div class="title_foot">
-                <p class="name_company">CÔNG TY TRÁCH NHIỆM HỮU HẠN GREEN BIKE <br /><br /></p>
-                <p>Giấy chứng nhận đăng ký kinh doanh số: 0110209808, ngày cấp: 16/12/2022, nơi cấp: Sở kế hoạch và đầu tư Hà Nội</p>
-                <br /><br />
-                <p></p>
-              </div>
-              <div class="item_content">
-                <p>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <span class="title_p">Giờ mở cửa:</span>
-                  <span>8:30 AM - 21:00 PM</span>
-                </p>
-                <p>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <span class="title_p">Địa chỉ:</span>
-                  <span>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</span>
-                </p>
-                <p>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <span class="title_p">Địa chỉ:</span>
-                  <span>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</span>
-                </p>
-                <p>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <span class="title_p">Hotline:</span>
-                  <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
-                </p>
-                <p>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <span class="title_p">Hotline:</span>
-                  <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
-                </p>
-                <p>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <span class="title_p">Hotline Kỹ Thuật TP.Hà Nội:</span>
-                  <span>0913.05.4444</span>
-                </p>
-                <p>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <span class="title_p">Hotline Kỹ Thuật TP.Hồ Chí Minh:</span>
-                  <span>0797.05.1234</span>
-                </p>
-              </div>
-            </div>
-            <div class="item for-us">
-              <div class="title_foot">
-                <p>Dành cho khách hàng</p>
-              </div>
-              <div class="item_content">
-                <ul>
-                  <li><a rel="follow" href="">Hướng dẫn thanh toán</a></li>
-                  <li><a rel="follow" href="">Hướng dẫn mua hàng từ xa</a></li>
-                  <li><a rel="follow" href="">Trả góp qua thẻ tín dụng</a></li>
-                  <li><a rel="follow" href="">Chính sách vận chuyển giao nhận</a></li>
-                  <li><a rel="follow" href="">Chính sách đổi trả hàng hóa</a></li>
-                  <li><a rel="follow" href="">Chính sách bảo mật thông tin</a></li>
-                  <li><a rel="follow" href="">Chính sách kiểm hàng</a></li>
-                  <li><a rel="follow" href="">Chính sách bảo hành </a></li>
-                  <li><a rel="follow" href="">Giới thiệu</a></li>
-                  <li><a rel="follow" href="">Liên hệ </a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="item conect_me">
-              <div class="title_foot">
-                <p>Kết nối với chúng tôi</p>
-              </div>
-              <div class="item_content">
-                <div
-                  class="fb-page fb_iframe_widget"
-                  data-href="https://www.facebook.com/xedienxiaomihimo"
-                  data-tabs="timeline"
-                  data-width=""
-                  data-height="250"
-                  data-small-header="true"
-                  data-adapt-container-width="true"
-                  data-hide-cover="false"
-                  data-show-facepile="true"
-                  fb-xfbml-state="rendered"
-                  fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=3082917358395842&amp;container_width=272&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxedienxiaomihimo&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width="
-                >
-                  <span style="vertical-align: bottom; width: 272px; height: 250px"
-                    ><iframe
-                      name="ffa89af16d682d3de"
-                      width="1000px"
-                      height="250px"
-                      data-testid="fb:page Facebook Social Plugin"
-                      title="fb:page Facebook Social Plugin"
-                      frameborder="0"
-                      allowtransparency="true"
-                      allowfullscreen="true"
-                      scrolling="no"
-                      allow="encrypted-media"
-                      src="https://www.facebook.com/v9.0/plugins/page.php?adapt_container_width=true&amp;app_id=3082917358395842&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df86669b7bc71a724b%26domain%3Dxedapdientroluc.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fxedapdientroluc.vn%252Ffec97d3a07ca84a56%26relation%3Dparent.parent&amp;container_width=272&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxedienxiaomihimo&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width="
-                      style="border: none; visibility: visible; width: 272px; height: 250px"
-                      class=""
-                    ></iframe
-                  ></span>
-                </div>
-              </div>
-            </div>
-            <div class="item other">
-              <div class="title_foot">
-                <p>Thông tin thanh toán</p>
-              </div>
-              <div class="protect" style="margin-top: 5px; line-height: 20px">
-                <p class="title"></p>
-                <div class="protect-item">
-                  <p>ACB - 3479996868 - NGUYEN THI NHAN</p>
-                  <p>243/1/22B Tô Hiến Thành, Phường 13, Quận 10, TP. HCM</p>
-                </div>
-                <div class="protect-item">
-                  <p>MB bank - 36905886868 - HO THI PHUONG HOA</p>
-                  <p>109 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
-                </div>
-              </div>
-              <div class="title_foot">
-                <p>Chứng nhận</p>
-              </div>
-              <div class="item_content">
-                <div class="protect">
-                  <div class="image">
-                    <img src="/assets/images/protected.png" />
-                  </div>
-                  <div class="image">
-                    <a href="http://online.gov.vn/Home/WebDetails/117354"><img src="https://sudospaces.com/xedapdientroluc/2024/07/dathongbao-1.png" width="195px" /></a>
-                  </div>
-                </div>
-                <div class="card_pay">
-                  <div class="wrap card_pay__title">Hỗ trợ thanh toán</div>
-                  <div class="wrap card_pay__image">
-                    <ul>
-                      <li><img src="./assets/images/visa.png" /></li>
-                      <li><img src="./assets/images/master_card.png" /></li>
-                      <li><img src="./assets/images/atm.png" /></li>
-                      <li><img src="./assets/images/tien-mat.png" /></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="button_action">
+         <ul>
+          <li class="button" data-scroll="specifications">
+           <div class="icon">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+           </div>
+           <p>Thông số kĩ thuật</p>
+          </li>
+          <li class="button" data-scroll="product-other">
+           <div class="icon">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+           </div>
+           <p>Sản phẩm cùng loại</p>
+          </li>
+          <li class="button" data-scroll="detailed-description">
+           <div class="icon">
+            <i class="fa fa-inbox" aria-hidden="true"></i>
+           </div>
+           <p>Mô tả chi tiết</p>
+          </li>
+          <li class="button" data-scroll="reivews-product">
+           <div class="icon">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+           </div>
+           <p>Bình luận sản phẩm</p>
+          </li>
+         </ul>
         </div>
-        <div class="footer-bottom">
-          <div class="container-fluid">
-            <div class="copy-right">
-              <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2020 XEDAPDIENTROLUC.VN. All rights reserved.</p>
-              <p>Mã số thuế :MST: 0110209808</p>
-            </div>
-          </div>
+        <div class="description_short">
+         <h6>Đặc điểm nổi bật</h6>
+         <ul>
+          <li>Động cơ lớn có thể peak lên 1200W, sử dụng cảm biến mô men xoắn lên đến 75Nm</li>
+          <li>Bộ shimano 8 cấp chuyển động mượt mà</li>
+          <li>Dung lượng pin lớn 52v16ah đáp ứng nhu cầu di chuyển thường xuyên của nhiều người</li>
+          <li>Phanh thủy lực khi bóp tạo cảm giác nhẹ nhàng và an toàn khi di chuyển</li>
+         </ul>
         </div>
+       </div>
+       <div class="infomation-product">
+        <div class="price">
+         <span class="price_sale" data-pice="31.990.000 ₫">31.990.000 ₫</span>
+         <span class="price_old"></span>
+        </div>
+        <div class="warranty">
+         <label>Chế độ bảo hành</label>
+         <select class="select_warranty_gold" id="select_warranty_gold" fdprocessedid="hafk58">
+          <option value="0" data-price="0">Bảo hành mặc định</option>
+         </select>
+         <label><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
+        </div>
+        <div class="box_promotion">
+         <div class="image_title">
+          <div class="image">
+           <img src="./assets/images/promotion.png" />
+           <p>Thông tin khuyến mại</p>
+          </div>
+         </div>
+         <div class="box_promotion__content css-content">
+          <p><strong>Ưu đãi khi mua hàng tại XEDAPDIENTROLUC:</strong></p>
+          <p><span style="color: #0000ff">♦</span> Giá rẻ nhất Việt Nam</p>
+          <p><span style="color: #0000ff">♦</span>&nbsp;Trả góp 0% qua thẻ tín dụng</p>
+          <p><span style="color: #0000ff">♦</span> Bảo hành 15 tháng</p>
+          <p><span style="color: #0000ff">♦</span>&nbsp;Hỗ trợ bảo dưỡng trọn đời</p>
+          <p><span style="color: #0000ff">♦ </span>Công ty chịu&nbsp;mọi rủi ro trong quá trình vận chuyển</p>
+          <p><span style="color: #0000ff">♦ </span>Ship hàng COD Toàn Quốc</p>
+         </div>
+        </div>
+        <div class="box_action">
+         <div class="btn btn-order">Mua ngay</div>
+         <div class="btn btn-installment">
+          <a href="">Mua trả góp</a>
+         </div>
+        </div>
+        <div class="registration">
+         <p>Để lại thông tin, XEDAPDIENTROLUC.VN sẽ gọi tư vấn cho bạn ngay !!!</p>
+         <div class="form">
+          <input type="hidden" name="product_id" value="64" />
+          <input class="item" type="text" name="name" placeholder="Họ và Tên" autocomplete="off" fdprocessedid="joltaf" />
+          <input class="item" type="text" name="phone" placeholder="Nhập số điện thoại" autocomplete="off" fdprocessedid="2f4l" />
+          <a class="item" href="">Gọi cho tôi</a>
+         </div>
+        </div>
+       </div>
       </div>
-      <div class="footer-mobile d-lg-none">
-        <div class="infomation-us-mobile">
-          <div class="item hotline-item">
-            <p>Hotline tư vấn</p>
-            <a href="">Hà Nội: 0707.10.9999 - 0798.67.5555</a>
-            <a href="">Hà Nội: 0707.10.9999 - 0798.67.5555</a>
-          </div>
-          <div class="item hotline-item">
-            <p>Hotline Kỹ Thuật TP.Hà Nội</p>
-            <a href="">0913.05.4444</a>
-            <p>Hotline Kỹ Thuật TP.Hồ Chí Minh</p>
-            <a href="">0797.05.1234</a>
-          </div>
-          <div class="item info_quickly">
-            <div class="icon">
-              <img src="./assets/images/uy-tin.png" alt="image" />
-            </div>
-            <div class="title_detail">
-              <p class="title_name">CAM KẾT</p>
-              <p class="des">Uy tín là vàng</p>
-            </div>
-          </div>
-          <div class="item info_quickly">
-            <div class="icon">
-              <img src="./assets/images/van-chuyen.png" alt="image" />
-            </div>
-            <div class="title_detail">
-              <p class="title_name">VẬN CHUYỂN HOẢ TỐC</p>
-              <p class="des">Ship COD toàn quốc</p>
-            </div>
-          </div>
-          <div class="item info_quickly">
-            <div class="icon">
-              <img src="./assets/images/ho-tro.png" alt="image" />
-            </div>
-            <div class="title_detail">
-              <p class="title_name">Trả góp lãi suất 0%</p>
-              <p class="des">Thanh toán Online dễ dàng</p>
-            </div>
-          </div>
-          <div class="item info_quickly">
-            <div class="icon">
-              <img src="./assets/images/tra-gop-0.png" alt="image" />
-            </div>
-            <div class="title_detail">
-              <p class="title_name">Hỗ trợ trọn đời</p>
-              <p class="des">Tư vấn miễn phí</p>
-            </div>
-          </div>
-          <div class="item info-more">
-            <div class="btn-show btn-show-info-more">Thông tin thêm<i class="fa fa-caret-down"></i></div>
-            <div class="info-more-content" style="display: none">
-              <ul>
-                <li><a href="" title="">Hướng dẫn thanh toán</a></li>
-                <li><a href="" title="">Hướng dẫn mua hàng từ xa</a></li>
-                <li><a href="" title="">Trả góp qua thẻ tín dụng</a></li>
-                <li><a href="" title="">Chính sách vận chuyển giao nhận</a></li>
-                <li><a href="" title="">Chính sách đổi trả hàng hóa</a></li>
-                <li><a href="" title="">Chính sách bảo mật thông tin</a></li>
-                <li><a href="" title="">Chính sách kiểm hàng</a></li>
-                <li><a href="" title="">Chính sách bảo hành </a></li>
-                <li><a href="" title="">Giới thiệu</a></li>
-                <li><a href="" title="">Liên hệ </a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="item info-more">
-            <div class="btn-show btn-show-for-customer">Dành cho khách hàng <i class="fa fa-caret-down"></i></div>
-            <div class="info-more-content" style="display: none">
-              <p>
-                <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Giờ mở cửa:</span><br />
-                <span>8:30 AM - 21:00 PM</span>
-              </p>
-              <p>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-                <span class="title_p">Địa chỉ:</span>
-                <span>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</span>
-              </p>
-              <p>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-                <span class="title_p">Địa chỉ:</span>
-                <span>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</span>
-              </p>
-              <p>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-                <span class="title_p">Hotline:</span>
-                <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
-              </p>
-              <p>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-                <span class="title_p">Hotline:</span>
-                <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
-              </p>
-              <p>
-                <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Hotline Kỹ Thuật TP.Hà Nội:</span><br />
-                <span>0913.05.4444</span>
-              </p>
-              <p>
-                <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Hotline Kỹ Thuật TP.Hồ Chí Minh:</span><br />
-                <span>0797.05.1234</span>
-              </p>
-            </div>
-          </div>
+      <div class="product_detail__body__sidebar">
+       <div class="info_general">
+        <div class="item">
+         <div class="item_title">
+          <div class="icon"><img src="./assets/images/bao-hanh.png" /></div>
+          <div class="title"><b>CHẾ ĐỘ BẢO HÀNH</b></div>
+         </div>
+         <ul class="item_content css-content">
+          <li><b>Thời gian bảo hành:</b> Bảo hành chính hãng 15 tháng</li>
+          <li>Bảo hành các lỗi hư hỏng được xác định do lỗi kỹ thuật hoặc do lỗi của nhà sản xuất bao gồm: khung sườn, mô tơ, sạc điện và linh kiện phụ tùng.</li>
+          <li>
+           <b>Hỗ trợ bảo hành trọn đời</b>
+          </li>
+         </ul>
         </div>
-        <div class="main-footer">
-          <div class="info-payment text-center">
-            <p>Thông tin thanh toán</p>
-            <div class="account-address">
-              <p>ACB - 3479996868 - NGUYEN THI NHAN</p>
-              <p>243/1/22B Tô Hiến Thành, Phường 13, Quận 10, TP. HCM</p>
-            </div>
-            <div class="account-address">
-              <p>MB bank - 36905886868 - HO THI PHUONG HOA</p>
-              <p>109 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
-            </div>
-          </div>
-          <div class="certificate">
-            <div class="image">
-              <img src="./assets/images/protected.png" alt="DMCA" />
-            </div>
-            <div class="image">
-              <a href="">
-                <img src="./assets/images/dathongbao-1.png" alt="Bộ công thương" />
-              </a>
-            </div>
-          </div>
+        <div class="item">
+         <div class="item_title">
+          <div class="icon"><img src="./assets/images/cam-ket.png" /></div>
+          <div class="title"><b>XEDAPDIENTROLUC CAM KẾT</b></div>
+         </div>
+         <ul class="item_content css-content">
+          <li>Hàng chính hãng mới 100%</li>
+          <li>Kiểm tra hàng trước khi thanh toán, bao mọi rủi ro trong quá trình vận chuyển</li>
+          <li>Cam kết hài lòng khách hàng</li>
+         </ul>
         </div>
-        <div class="copy_right">
-          <p>Mã số thuế :MST: 0110209808</p>
-          <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2020 XEDAPDIENTROLUC.VN. All rights reserved.</p>
+        <div class="item">
+         <div class="item_title">
+          <div class="icon"><img src="./assets/images/logo-box.png" /></div>
+          <div class="title"><b> KÈM THEO HỘP</b></div>
+         </div>
+         <ul class="item_content css-content">
+          <li><b>Gồm có:</b> Xe đạp, Phiếu bảo hành, Sạc pin, Dè chắn bùn, Phụ kiện khách mua kèm nếu có</li>
+         </ul>
         </div>
+       </div>
+       <div class="info_company">
+        <div class="info_company__title">Thông tin liên hệ:</div>
+        <div class="info_company__content">
+         <ul>
+          <li>
+           <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+           Hotline:
+           <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
+          </li>
+          <li>
+           <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+           Hotline:
+           <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
+          </li>
+          <li>
+           <i class="fa fa-clock-o" aria-hidden="true"></i>
+           <p>8:30 AM - 21:00 PM</p>
+          </li>
+          <li>
+           <i class="fa fa-map-marker" aria-hidden="true"></i>
+           <p>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</p>
+          </li>
+          <li>
+           <i class="fa fa-map-marker" aria-hidden="true"></i>
+           <p>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</p>
+          </li>
+          <li><i class="fa fa-map-marker" aria-hidden="true"></i><a target="_blank" href="">Xem chỉ đường tới cửa hàng</a></li>
+         </ul>
+        </div>
+       </div>
       </div>
-    </footer>
-    <div class="btn-back-to-top">
-      <div class="d-lg-flex d-none icon-pc">
-        <i class="fa fa-chevron-up"></i>
-      </div>
-      <div class="d-lg-none icon-mobile">
-        <img src="./assets/images/icon_backtop.png" alt="icon" />
-      </div>
+     </div>
     </div>
-    <div class="menu-sns-fixed">
-      <ul class="list-menu-sns-fixed">
-        <li class="btn-menu-hambg d-lg-none">
-          <div>
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <p>Menu</p>
-          </div>
-        </li>
-        <li class="call">
-          <a href="">
-            <img src="./assets/images/call-icon.png" alt="icon" />
-            <p>Hotline</p>
-          </a>
-        </li>
-        <li class="messenger">
-          <a href="">
-            <img src="./assets/images/fb-icon.png" alt="icon" />
-            <p>Chat FB</p>
-          </a>
-        </li>
-        <li class="zalo">
-          <a href="">
-            <img src="./assets/images/zalo-icon.png" alt="icon" />
-            <p>Zalo</p>
-          </a>
-        </li>
-        <li class="showroom d-lg-block d-none">
-          <a href="">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>Showroom</p>
-          </a>
-        </li>
-      </ul>
+   </section>
+   <section id="detailed-description" class="detailed-description">
+    <div class="container-fluid">
+     <div class="title-generals">
+      <h2>Mô tả chi tiết</h2>
+     </div>
+     <div class="content">
+      <h1 id="mcetoc_1i3stakhr0">
+       <strong><span style="font-family: arial, helvetica, sans-serif; color: #008080">Có gì thú vị để trải nghiệm trên chiếc Engwe Pro 2.0 bản nâng cấp này?</span></strong>
+      </h1>
+      <strong>Tstandard Lorem Ipsum passage, used since the 1500s </strong>
+      <p>
+       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et
+       Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+       adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+      </p>
+      <img src="./assets/images/dong-co-pro-2-0.jpg" alt="image" />
+      <strong>Tstandard Lorem Ipsum passage, used since the 1500s </strong>
+      <p>
+       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et
+       Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+       adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+      </p>
+     </div>
+     <div class="btn-view-all">
+      <div class="view-more">Xem thêm</div>
+      <div class="hidden-view">Thu gọn</div>
+     </div>
     </div>
-  </body>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <!-- booststrap -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <script src="./assets/js/index.js"></script>
+   </section>
+   <section id="specifications" class="specifications">
+    <div class="container-fluid">
+     <div class="title-generals">
+      <h2>Thông số kỹ thuật</h2>
+     </div>
+     <div class="content-specifications d-lg-flex">
+      <div class="specifications-left">
+       <div class="slider-specifiations-image swiper-container">
+        <div class="swiper-wrapper">
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga.jpg" />
+         </div>
+        </div>
+       </div>
+       <div class="slider-specifiations-thumbnail swiper-container">
+        <div class="swiper-wrapper">
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga-small.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga-small.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga-small.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga-small.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga-small.jpg" />
+         </div>
+         <div class="swiper-slide">
+          <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" src="./assets/images/gac-baga-small.jpg" />
+         </div>
+        </div>
+        <div class="swiper-pagination"></div>
+       </div>
+      </div>
+      <div class="specifications-right">
+       <div class="name_product">
+        <h3>Xe Đạp Điện Trợ Lực Engwe Pro 2.0</h3>
+       </div>
+       <div class="product_features_list">
+        <ul id="main-list-feature-detail" class="main-list-feature-detail">
+         <li class="list_parent">
+          <p>Thông số kỹ thuật: (Xe Đạp Điện Engwe)</p>
+          <ul class="sub_list">
+           <li class="list_child">
+            <div class="title">Tên sản phẩm</div>
+            <div class="info">Xe đạp điện trợ lực Engwe Pro 2.0</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Quãng đường đạp điện</div>
+            <div class="info">60 km</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Quãng đường đạp trợ lực:</div>
+            <div class="info">110 km</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Công suất định mức động cơ:</div>
+            <div class="info">750W</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Trọng lượng xe:</div>
+            <div class="info">33 kg</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Tốc độ tối đa:</div>
+            <div class="info">45 km/h</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Loại Pin:</div>
+            <div class="info">Lithium 52V 16ah</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Loại động cơ:</div>
+            <div class="info">ĐỘNG CƠ TRỤC SAU</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Thời gian sạc:</div>
+            <div class="info">7h</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Tốc độ định mức:</div>
+            <div class="info">25 km/h</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Màu:</div>
+            <div class="info">xanh lá đậm, xanh dương, đen</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Kích thước DxCxR</div>
+            <div class="info">170*43*69 cm</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Kích thước gấp:</div>
+            <div class="info">104*55*84 cm</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Kích thước hộp:</div>
+            <div class="info">144*32*72 cm</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Kích thước lốp:</div>
+            <div class="info">20 x 4.0 inch</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Hộp số:</div>
+            <div class="info">Shimano 8 cấp</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Giảm xóc:</div>
+            <div class="info">Giảm sóc trước &amp; giữa</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Phanh:</div>
+            <div class="info">phanh dầu thủy lực</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- ID:</div>
+            <div class="info">Engwe Pro 2.0</div>
+           </li>
+          </ul>
+         </li>
+         <li class="list_parent">
+          <p>Phần cứng</p>
+          <ul class="sub_list">
+           <li class="list_child">
+            <div class="title">- Khung xe:</div>
+            <div class="info">Hợp kim nhôm</div>
+           </li>
+           <li class="list_child">
+            <div class="title">-Mâm bánh xe:</div>
+            <div class="info">Vành đúc</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Đèn:</div>
+            <div class="info">đèn trước và đèn hậu sau</div>
+           </li>
+           <li class="list_child">
+            <div class="title">- Loại bánh xe:</div>
+            <div class="info"></div>
+           </li>
+          </ul>
+         </li>
+         <li class="list_parent">
+          <p>Phần mềm</p>
+          <ul class="sub_list"></ul>
+         </li>
+        </ul>
+       </div>
+       <div class="view_all_attribute"><a class="popup_attribute" data-fancybox="" data-src="#main-list-feature-detail">Xem thông tin đầy đủ</a></div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="video-product" class="video-product">
+    <div class="container-fluid">
+     <div class="title-generals">
+      <h2>Video thực tế</h2>
+     </div>
+     <a href="https://youtu.be/ElYliWzbqqk?si=ULVt5Jlc-mDFGH-9" class="video" data-fancybox>
+      <img class="lazy" data-original="./assets/images/banner.jpg" alt="" onerror="this.src='/assets/images/no-image.png'" src="./assets/images/banner.jpg" />
+      <span class="media-play"><i class="fa fa-play" aria-hidden="true"></i></span>
+     </a>
+    </div>
+   </section>
+   <section id="product-viewed" class="product-viewed">
+    <div class="container-fluid">
+     <div class="title-generals">
+      <h2>Sản phẩm đã xem</h2>
+     </div>
+     <div class="slider-product-viewed">
+      <div class="swiper-wrapper">
+       <div class="swiper-slide">
+        <div class="item-product">
+         <a href="">
+          <div class="image">
+           <img src="./assets/images/pro-2-0-6-1-medium.jpg" alt="image" />
+          </div>
+          <div class="tags">
+           <div class="icon">
+            <img src="./assets/images/icon4-50x50.png" alt="icon" />
+           </div>
+           <div class="name">BẢO HÀNH CHÍNH HÃNG</div>
+          </div>
+          <div class="info">
+           <h3>Xe Đạp Điện Trợ Lực ENGWE C20 PRO</h3>
+           <div class="prices">
+            <span class="price">16.690.000 ₫</span>
+            <span class="old-price">16.690.000 ₫</span>
+           </div>
+           <div class="reviews">
+            <div class="vote-star">
+             <ul>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+             </ul>
+            </div>
+            <span class="count_vote"> (18 đánh giá) </span>
+           </div>
+          </div>
+          <div class="sticker">
+           <img src="./assets/images/doc-quyen.png" alt="image" />
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="swiper-slide">
+        <div class="item-product">
+         <a href="">
+          <div class="image">
+           <img src="./assets/images/pro-2-0-6-1-medium.jpg" alt="image" />
+          </div>
+          <div class="tags">
+           <div class="icon">
+            <img src="./assets/images/icon4-50x50.png" alt="icon" />
+           </div>
+           <div class="name">BẢO HÀNH CHÍNH HÃNG</div>
+          </div>
+          <div class="info">
+           <h3>Xe Đạp Điện Trợ Lực ENGWE C20 PRO</h3>
+           <div class="prices">
+            <span class="price">16.690.000 ₫</span>
+            <span class="old-price">16.690.000 ₫</span>
+           </div>
+           <div class="reviews">
+            <div class="vote-star">
+             <ul>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star color_star" aria-hidden="true"></i></li>
+             </ul>
+            </div>
+            <span class="count_vote"> (18 đánh giá) </span>
+           </div>
+          </div>
+          <div class="sticker">
+           <img src="./assets/images/doc-quyen.png" alt="image" />
+          </div>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="reivews-product" class="reivews-product">
+    <div class="container-fluid">
+     <div class="content-reviews-product d-lg-flex">
+      <div class="reviews-products-left">
+       <div class="title-generals">
+        <h2>Đánh giá</h2>
+       </div>
+       <div class="comments">
+        <div class="comments_form">
+         <div class="form_show">
+          <div class="form_input">
+           <textarea type="text" name="comment" id="content" placeholder="Nhập bình luận của bạn..."></textarea>
+          </div>
+          <div class="form_star">
+           <div class="comment_rules">
+            <a href="#">Quy định bình luận</a>
+           </div>
+           <div class="vote_star_product">
+            <div class="vote_stars">
+             <label>Chọn sao để đánh giá</label>
+             <div class="rating-star">
+              <i class="fa start fa-star" data-value="1" aria-hidden="true"></i>
+              <i class="fa start fa-star" data-value="2" aria-hidden="true"></i>
+              <i class="fa start fa-star" data-value="3" aria-hidden="true"></i>
+              <i class="fa start fa-star" data-value="4" aria-hidden="true"></i>
+              <i class="fa start fa-star" data-value="5" aria-hidden="true"></i>
+             </div>
+            </div>
+            <div class="send_comment">
+             <a href="javascript:;" class="popup_info">Gửi</a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="search_comment">
+          <div class="count_comment">2 Bình luận</div>
+          <div class="input_search">
+           <div class="form">
+            <input type="text" name="keyword" id="search_comment" placeholder="Tìm theo nội dung, người gửi..." />
+            <a><img src="./assets/images/icon-seachs.png" /></a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="show_comment">
+         <div class="comment_item">
+          <div class="comment_item_list">
+           <div class="comment_avatar">
+            <span class="avatar">H</span>
+           </div>
+           <div class="comment_info">
+            <div class="comment_info__title">
+             <div class="name_comment">
+              <p class="name">Huyền</p>
+             </div>
+            </div>
+            <div class="comment_info__content">xe này học sinh đi được không ạ?</div>
+            <div class="comment_info__foot">
+             <div class="info_foot">
+              <a class="reply reply_0" data-key="0">Trả lời</a>
+              <p class="time">22:50 29/07/2024</p>
+             </div>
+             <div class="star_comment rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+            </div>
+           </div>
+          </div>
+          <div class="comment-child-list show_comment">
+           <div class="comment-child-item">
+            <div class="comment-avatar">
+             <img class="avatar_thumb" src="/assets/images/logo-mobile.png" alt="" style="width: 40px; height: 40px" />
+            </div>
+            <div class="comment-info">
+             <div class="comment-title">
+              <div class="comment-name">
+               <p class="name">Phạm Linh</p>
+               <p class="admin">Quản trị viên</p>
+              </div>
+             </div>
+             <div class="comment-content">Dạ các bạn học sinh 16, 17 tuổi đi được rồi ạ. Xe này cao tầm m6 đi đc ạ. Cần tư vấn kĩ hơn anh/chị kết bạn zalo số: 0798 675 555</div>
+             <div class="comment-footer">
+              <p class="time">22:52 29/07/2024</p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="comment_item">
+          <div class="comment_item_list">
+           <div class="comment_avatar">
+            <span class="avatar">H</span>
+           </div>
+           <div class="comment_info">
+            <div class="comment_info__title">
+             <div class="name_comment">
+              <p class="name">Huyền</p>
+             </div>
+            </div>
+            <div class="comment_info__content">xe này học sinh đi được không ạ?</div>
+            <div class="comment_info__foot">
+             <div class="info_foot">
+              <a class="reply reply_0" data-key="0">Trả lời</a>
+              <p class="time">22:50 29/07/2024</p>
+             </div>
+             <div class="star_comment rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+            </div>
+           </div>
+          </div>
+          <div class="comment-child-list show_comment">
+           <div class="comment-child-item">
+            <div class="comment-avatar">
+             <img class="avatar_thumb" src="/assets/images/logo-mobile.png" alt="" style="width: 40px; height: 40px" />
+            </div>
+            <div class="comment-info">
+             <div class="comment-title">
+              <div class="comment-name">
+               <p class="name">Phạm Linh</p>
+               <p class="admin">Quản trị viên</p>
+              </div>
+             </div>
+             <div class="comment-content">Dạ các bạn học sinh 16, 17 tuổi đi được rồi ạ. Xe này cao tầm m6 đi đc ạ. Cần tư vấn kĩ hơn anh/chị kết bạn zalo số: 0798 675 555</div>
+             <div class="comment-footer">
+              <p class="time">22:52 29/07/2024</p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="reviews-products-right">
+       <div class="title-generals">
+        <h2>Sản phẩm liên quan</h2>
+       </div>
+       <div class="list-products-default">
+        <div class="item default">
+         <div class="item-img">
+          <a href="">
+           <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+          </a>
+         </div>
+         <div class="item-info">
+          <div class="item-info__name default">
+           <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+          </div>
+          <div class="item-info__price default">
+           <span class="price-new">20.990.000 ₫</span>
+           <span class="price-old"></span>
+          </div>
+         </div>
+        </div>
+        <div class="item default">
+         <div class="item-img">
+          <a href="">
+           <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+          </a>
+         </div>
+         <div class="item-info">
+          <div class="item-info__name default">
+           <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+          </div>
+          <div class="item-info__price default">
+           <span class="price-new">20.990.000 ₫</span>
+           <span class="price-old"></span>
+          </div>
+         </div>
+        </div>
+        <div class="item default">
+         <div class="item-img">
+          <a href="">
+           <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+          </a>
+         </div>
+         <div class="item-info">
+          <div class="item-info__name default">
+           <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+          </div>
+          <div class="item-info__price default">
+           <span class="price-new">20.990.000 ₫</span>
+           <span class="price-old"></span>
+          </div>
+         </div>
+        </div>
+        <div class="item default">
+         <div class="item-img">
+          <a href="">
+           <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+          </a>
+         </div>
+         <div class="item-info">
+          <div class="item-info__name default">
+           <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+          </div>
+          <div class="item-info__price default">
+           <span class="price-new">20.990.000 ₫</span>
+           <span class="price-old"></span>
+          </div>
+         </div>
+        </div>
+        <div class="item default">
+         <div class="item-img">
+          <a href="">
+           <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+          </a>
+         </div>
+         <div class="item-info">
+          <div class="item-info__name default">
+           <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+          </div>
+          <div class="item-info__price default">
+           <span class="price-new">20.990.000 ₫</span>
+           <span class="price-old"></span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="product-other" class="product-other">
+    <div class="container-fluid">
+     <div class="title-generals">
+      <h2>Sản phẩm cùng loại</h2>
+     </div>
+     <div class="list-products-default">
+      <div class="item default">
+       <div class="item-img">
+        <a href="">
+         <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+        </a>
+       </div>
+       <div class="item-info">
+        <div class="item-info__name default">
+         <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+        </div>
+        <div class="item-info__price default">
+         <span class="price-new">20.990.000 ₫</span>
+         <span class="price-old"></span>
+        </div>
+       </div>
+      </div>
+      <div class="item default">
+       <div class="item-img">
+        <a href="">
+         <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+        </a>
+       </div>
+       <div class="item-info">
+        <div class="item-info__name default">
+         <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+        </div>
+        <div class="item-info__price default">
+         <span class="price-new">20.990.000 ₫</span>
+         <span class="price-old"></span>
+        </div>
+       </div>
+      </div>
+      <div class="item default">
+       <div class="item-img">
+        <a href="">
+         <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+        </a>
+       </div>
+       <div class="item-info">
+        <div class="item-info__name default">
+         <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+        </div>
+        <div class="item-info__price default">
+         <span class="price-new">20.990.000 ₫</span>
+         <span class="price-old"></span>
+        </div>
+       </div>
+      </div>
+      <div class="item default">
+       <div class="item-img">
+        <a href="">
+         <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+        </a>
+       </div>
+       <div class="item-info">
+        <div class="item-info__name default">
+         <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+        </div>
+        <div class="item-info__price default">
+         <span class="price-new">20.990.000 ₫</span>
+         <span class="price-old"></span>
+        </div>
+       </div>
+      </div>
+      <div class="item default">
+       <div class="item-img">
+        <a href="">
+         <img alt="Xe Đạp Điện Trợ Lực Engwe L20 SE" class="avatar" src="./assets/images/l20-se-2-1-medium.jpg" />
+        </a>
+       </div>
+       <div class="item-info">
+        <div class="item-info__name default">
+         <a href=""> Xe Đạp Điện Trợ Lực Engwe L20 SE </a>
+        </div>
+        <div class="item-info__price default">
+         <span class="price-new">20.990.000 ₫</span>
+         <span class="price-old"></span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="infomation_us d-lg-block d-none">
+    <div class="container-fluid">
+     <div class="infomation_us__contents">
+      <div class="item">
+       <div class="image">
+        <img src="./assets/images/union_1.png" alt="xedapdientroluc" />
+        <p>Lợi ích chỉ có ở<br />XEDAPDIENTROLUC</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/uy-tin.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">CAM KẾT</p>
+        <p class="des">Uy tín là vàng</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/van-chuyen.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">VẬN CHUYỂN HOẢ TỐC</p>
+        <p class="des">Ship COD toàn quốc</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/ho-tro.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">Trả góp lãi suất 0%</p>
+        <p class="des">Thanh toán Online dễ dàng</p>
+       </div>
+      </div>
+      <div class="item">
+       <div class="icon">
+        <img src="./assets/images/tra-gop-0.png" alt="image" />
+       </div>
+       <div class="title_detail">
+        <p class="title_name">Hỗ trợ trọn đời</p>
+        <p class="des">Tư vấn miễn phí</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="footer-pc d-lg-block d-none">
+    <div class="container-fluid">
+     <div class="logo_foot">
+      <div class="image">
+       <a href="/"><img src="./assets/images/xedapdientroluc.png" /></a>
+      </div>
+     </div>
+     <div class="footer__content">
+      <div class="item information">
+       <div class="title_foot">
+        <p class="name_company">CÔNG TY TRÁCH NHIỆM HỮU HẠN GREEN BIKE <br /><br /></p>
+        <p>Giấy chứng nhận đăng ký kinh doanh số: 0110209808, ngày cấp: 16/12/2022, nơi cấp: Sở kế hoạch và đầu tư Hà Nội</p>
+        <br /><br />
+        <p></p>
+       </div>
+       <div class="item_content">
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Giờ mở cửa:</span>
+         <span>8:30 AM - 21:00 PM</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Địa chỉ:</span>
+         <span>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Địa chỉ:</span>
+         <span>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline:</span>
+         <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline:</span>
+         <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline Kỹ Thuật TP.Hà Nội:</span>
+         <span>0913.05.4444</span>
+        </p>
+        <p>
+         <i class="fa fa-circle" aria-hidden="true"></i>
+         <span class="title_p">Hotline Kỹ Thuật TP.Hồ Chí Minh:</span>
+         <span>0797.05.1234</span>
+        </p>
+       </div>
+      </div>
+      <div class="item for-us">
+       <div class="title_foot">
+        <p>Dành cho khách hàng</p>
+       </div>
+       <div class="item_content">
+        <ul>
+         <li><a rel="follow" href="">Hướng dẫn thanh toán</a></li>
+         <li><a rel="follow" href="">Hướng dẫn mua hàng từ xa</a></li>
+         <li><a rel="follow" href="">Trả góp qua thẻ tín dụng</a></li>
+         <li><a rel="follow" href="">Chính sách vận chuyển giao nhận</a></li>
+         <li><a rel="follow" href="">Chính sách đổi trả hàng hóa</a></li>
+         <li><a rel="follow" href="">Chính sách bảo mật thông tin</a></li>
+         <li><a rel="follow" href="">Chính sách kiểm hàng</a></li>
+         <li><a rel="follow" href="">Chính sách bảo hành </a></li>
+         <li><a rel="follow" href="">Giới thiệu</a></li>
+         <li><a rel="follow" href="">Liên hệ </a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="item conect_me">
+       <div class="title_foot">
+        <p>Kết nối với chúng tôi</p>
+       </div>
+       <div class="item_content">
+        <div
+         class="fb-page fb_iframe_widget"
+         data-href="https://www.facebook.com/xedienxiaomihimo"
+         data-tabs="timeline"
+         data-width=""
+         data-height="250"
+         data-small-header="true"
+         data-adapt-container-width="true"
+         data-hide-cover="false"
+         data-show-facepile="true"
+         fb-xfbml-state="rendered"
+         fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=3082917358395842&amp;container_width=272&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxedienxiaomihimo&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width="
+        >
+         <span style="vertical-align: bottom; width: 272px; height: 250px"
+          ><iframe
+           name="ffa89af16d682d3de"
+           width="1000px"
+           height="250px"
+           data-testid="fb:page Facebook Social Plugin"
+           title="fb:page Facebook Social Plugin"
+           frameborder="0"
+           allowtransparency="true"
+           allowfullscreen="true"
+           scrolling="no"
+           allow="encrypted-media"
+           src="https://www.facebook.com/v9.0/plugins/page.php?adapt_container_width=true&amp;app_id=3082917358395842&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df86669b7bc71a724b%26domain%3Dxedapdientroluc.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fxedapdientroluc.vn%252Ffec97d3a07ca84a56%26relation%3Dparent.parent&amp;container_width=272&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxedienxiaomihimo&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width="
+           style="border: none; visibility: visible; width: 272px; height: 250px"
+           class=""
+          ></iframe
+         ></span>
+        </div>
+       </div>
+      </div>
+      <div class="item other">
+       <div class="title_foot">
+        <p>Thông tin thanh toán</p>
+       </div>
+       <div class="protect" style="margin-top: 5px; line-height: 20px">
+        <p class="title"></p>
+        <div class="protect-item">
+         <p>ACB - 3479996868 - NGUYEN THI NHAN</p>
+         <p>243/1/22B Tô Hiến Thành, Phường 13, Quận 10, TP. HCM</p>
+        </div>
+        <div class="protect-item">
+         <p>MB bank - 36905886868 - HO THI PHUONG HOA</p>
+         <p>109 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
+        </div>
+       </div>
+       <div class="title_foot">
+        <p>Chứng nhận</p>
+       </div>
+       <div class="item_content">
+        <div class="protect">
+         <div class="image">
+          <img src="/assets/images/protected.png" />
+         </div>
+         <div class="image">
+          <a href="http://online.gov.vn/Home/WebDetails/117354"><img src="https://sudospaces.com/xedapdientroluc/2024/07/dathongbao-1.png" width="195px" /></a>
+         </div>
+        </div>
+        <div class="card_pay">
+         <div class="wrap card_pay__title">Hỗ trợ thanh toán</div>
+         <div class="wrap card_pay__image">
+          <ul>
+           <li><img src="./assets/images/visa.png" /></li>
+           <li><img src="./assets/images/master_card.png" /></li>
+           <li><img src="./assets/images/atm.png" /></li>
+           <li><img src="./assets/images/tien-mat.png" /></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <div class="container-fluid">
+      <div class="copy-right">
+       <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2020 XEDAPDIENTROLUC.VN. All rights reserved.</p>
+       <p>Mã số thuế :MST: 0110209808</p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-mobile d-lg-none">
+    <div class="infomation-us-mobile">
+     <div class="item hotline-item">
+      <p>Hotline tư vấn</p>
+      <a href="">Hà Nội: 0707.10.9999 - 0798.67.5555</a>
+      <a href="">Hà Nội: 0707.10.9999 - 0798.67.5555</a>
+     </div>
+     <div class="item hotline-item">
+      <p>Hotline Kỹ Thuật TP.Hà Nội</p>
+      <a href="">0913.05.4444</a>
+      <p>Hotline Kỹ Thuật TP.Hồ Chí Minh</p>
+      <a href="">0797.05.1234</a>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/uy-tin.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">CAM KẾT</p>
+       <p class="des">Uy tín là vàng</p>
+      </div>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/van-chuyen.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">VẬN CHUYỂN HOẢ TỐC</p>
+       <p class="des">Ship COD toàn quốc</p>
+      </div>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/ho-tro.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">Trả góp lãi suất 0%</p>
+       <p class="des">Thanh toán Online dễ dàng</p>
+      </div>
+     </div>
+     <div class="item info_quickly">
+      <div class="icon">
+       <img src="./assets/images/tra-gop-0.png" alt="image" />
+      </div>
+      <div class="title_detail">
+       <p class="title_name">Hỗ trợ trọn đời</p>
+       <p class="des">Tư vấn miễn phí</p>
+      </div>
+     </div>
+     <div class="item info-more">
+      <div class="btn-show btn-show-info-more">Thông tin thêm<i class="fa fa-caret-down"></i></div>
+      <div class="info-more-content" style="display: none">
+       <ul>
+        <li><a href="" title="">Hướng dẫn thanh toán</a></li>
+        <li><a href="" title="">Hướng dẫn mua hàng từ xa</a></li>
+        <li><a href="" title="">Trả góp qua thẻ tín dụng</a></li>
+        <li><a href="" title="">Chính sách vận chuyển giao nhận</a></li>
+        <li><a href="" title="">Chính sách đổi trả hàng hóa</a></li>
+        <li><a href="" title="">Chính sách bảo mật thông tin</a></li>
+        <li><a href="" title="">Chính sách kiểm hàng</a></li>
+        <li><a href="" title="">Chính sách bảo hành </a></li>
+        <li><a href="" title="">Giới thiệu</a></li>
+        <li><a href="" title="">Liên hệ </a></li>
+       </ul>
+      </div>
+     </div>
+     <div class="item info-more">
+      <div class="btn-show btn-show-for-customer">Dành cho khách hàng <i class="fa fa-caret-down"></i></div>
+      <div class="info-more-content" style="display: none">
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Giờ mở cửa:</span><br />
+        <span>8:30 AM - 21:00 PM</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Địa chỉ:</span>
+        <span>Số 109 Trần Duy Hưng,Q.Cầu Giấy, Hà Nội 📞Hotline: 0707.10.9999</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Địa chỉ:</span>
+        <span>243/1/22B Tô Hiến Thành, P.13, Q.10, TP. Hồ Chí Minh 📞Hotline: 0908.15.1234</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Hotline:</span>
+        <span>Hà Nội: 0707.10.9999 - 0798.67.5555</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="title_p">Hotline:</span>
+        <span>TP.HCM: 0908.15.1234 - 0859.15.1111</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Hotline Kỹ Thuật TP.Hà Nội:</span><br />
+        <span>0913.05.4444</span>
+       </p>
+       <p>
+        <i class="fa fa-circle" aria-hidden="true"></i> <span class="title_p">Hotline Kỹ Thuật TP.Hồ Chí Minh:</span><br />
+        <span>0797.05.1234</span>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="main-footer">
+     <div class="info-payment text-center">
+      <p>Thông tin thanh toán</p>
+      <div class="account-address">
+       <p>ACB - 3479996868 - NGUYEN THI NHAN</p>
+       <p>243/1/22B Tô Hiến Thành, Phường 13, Quận 10, TP. HCM</p>
+      </div>
+      <div class="account-address">
+       <p>MB bank - 36905886868 - HO THI PHUONG HOA</p>
+       <p>109 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
+      </div>
+     </div>
+     <div class="certificate">
+      <div class="image">
+       <img src="./assets/images/protected.png" alt="DMCA" />
+      </div>
+      <div class="image">
+       <a href="">
+        <img src="./assets/images/dathongbao-1.png" alt="Bộ công thương" />
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="copy_right">
+     <p>Mã số thuế :MST: 0110209808</p>
+     <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2020 XEDAPDIENTROLUC.VN. All rights reserved.</p>
+    </div>
+   </div>
+  </footer>
+  <div class="btn-back-to-top">
+   <div class="d-lg-flex d-none icon-pc">
+    <i class="fa fa-chevron-up"></i>
+   </div>
+   <div class="d-lg-none icon-mobile">
+    <img src="./assets/images/icon_backtop.png" alt="icon" />
+   </div>
+  </div>
+  <div class="menu-sns-fixed">
+   <ul class="list-menu-sns-fixed">
+    <li class="btn-menu-hambg d-lg-none">
+     <div>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <p>Menu</p>
+     </div>
+    </li>
+    <li class="call">
+     <a href="">
+      <img src="./assets/images/call-icon.png" alt="icon" />
+      <p>Hotline</p>
+     </a>
+    </li>
+    <li class="messenger">
+     <a href="">
+      <img src="./assets/images/fb-icon.png" alt="icon" />
+      <p>Chat FB</p>
+     </a>
+    </li>
+    <li class="zalo">
+     <a href="">
+      <img src="./assets/images/zalo-icon.png" alt="icon" />
+      <p>Zalo</p>
+     </a>
+    </li>
+    <li class="showroom d-lg-block d-none">
+     <a href="">
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <p>Showroom</p>
+     </a>
+    </li>
+   </ul>
+  </div>
+ </body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- booststrap -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+ <script src="./assets/js/index.js"></script>
 </html>
