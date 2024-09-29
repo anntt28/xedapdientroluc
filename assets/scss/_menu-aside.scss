@@ -55,7 +55,15 @@
       }
     }
   }
-
+  .sub-menu{
+    padding: 0 10px !important;
+    display: none;
+    li{
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
+  }
   .has-child {
     .sub-menu {
       margin-left: 35px;
@@ -87,8 +95,7 @@
     .sub-menu {
       padding: 1rem;
       a {
-        font-size: 0.85rem;
-        opacity: 0.8;
+        font-size: 1rem;
       }
     }
   }

@@ -106,9 +106,13 @@ $(function () {
       $(".header-bottom-mobile").removeClass("show-a");
     }
   });
-  $('.detailed-description div').on('click', function(){
-    $(this).parent('.detailed-description .btn-view-all').toggleClass('active');
-    $(this).siblings('.detailed-description .content').toggleClass('active');
+  $(".detailed-description div").on("click", function () {
+    $(this).parent(".detailed-description .btn-view-all").toggleClass("active");
+    $(this).siblings(".detailed-description .content").toggleClass("active");
+  });
+  $(".menu-item-has-children").click(function (e) {
+    e.preventDefault();
+    $(".menu-aside .sub-menu").slideToggle("open");
   });
   $("body").on("click", "*[data-scroll]", function (t) {
     t.preventDefault(),
