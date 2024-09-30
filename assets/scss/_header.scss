@@ -224,6 +224,7 @@
         justify-content: center;
         li {
           cursor: pointer;
+          display: flex;
           padding: 0 5px;
           &.has-icon {
             a {
@@ -256,6 +257,20 @@
             }
           }
           &.menu-item-has-children {
+            & > a{
+              display: flex;
+              align-items: center;
+              &::after{
+                content: "";
+                background-image: url(/assets/images/arrow-down.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: block;
+                width: 10px;
+                height: 10px;
+                margin-left: 10px;
+              }
+            }
             &:hover {
               .sub-menu {
                 visibility: visible;
@@ -266,6 +281,7 @@
       }
       .sub-menu {
         position: absolute;
+        top: 88px;
         visibility: hidden;
         background: $primary;
         margin-top: 10px;
@@ -274,6 +290,9 @@
         transition: all 0.3s;
         li {
           margin: 10px 0;
+          a{
+            transition: none;
+          }
         }
       }
     }

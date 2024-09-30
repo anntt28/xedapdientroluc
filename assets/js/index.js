@@ -148,6 +148,7 @@ $(function () {
   });
   $(".menu-item-has-children").click(function (e) {
     e.preventDefault();
+    $(this).toggleClass("open");
     $(".menu-aside .sub-menu").slideToggle("open");
   });
 });

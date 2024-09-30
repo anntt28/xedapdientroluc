@@ -10634,6 +10634,9 @@ input::placeholder, .modal textarea::placeholder {
 
 .header_middle .main-menu .menu-menu-container .menu li {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 5px;
 }
 
@@ -10673,12 +10676,33 @@ input::placeholder, .modal textarea::placeholder {
   color: #3e3e3e;
 }
 
+.header_middle .main-menu .menu-menu-container .menu li.menu-item-has-children > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_middle .main-menu .menu-menu-container .menu li.menu-item-has-children > a::after {
+  content: "";
+  background-image: url(/assets/images/arrow-down.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
 .header_middle .main-menu .menu-menu-container .menu li.menu-item-has-children:hover .sub-menu {
   visibility: visible;
 }
 
 .header_middle .main-menu .menu-menu-container .sub-menu {
   position: absolute;
+  top: 88px;
   visibility: hidden;
   background: #074fbb;
   margin-top: 10px;
@@ -10690,6 +10714,11 @@ input::placeholder, .modal textarea::placeholder {
 
 .header_middle .main-menu .menu-menu-container .sub-menu li {
   margin: 10px 0;
+}
+
+.header_middle .main-menu .menu-menu-container .sub-menu li a {
+  -webkit-transition: none;
+  transition: none;
 }
 
 .header_middle .feature {
@@ -11291,6 +11320,36 @@ input::placeholder, .modal textarea::placeholder {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.menu-aside .menu-item-has-children > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-aside .menu-item-has-children > a::after {
+  content: "";
+  background-image: url(/assets/images/arrow-down.png);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.menu-aside .menu-item-has-children.open > a::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .menu-aside .menu-item-has-children .sub-menu {
