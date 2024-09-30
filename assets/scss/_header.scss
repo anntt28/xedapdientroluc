@@ -270,6 +270,11 @@
                 height: 10px;
                 margin-left: 10px;
               }
+              &:hover{
+                &::after{
+                  background-image: url(/assets/images/arrow-down-black.png);
+                }
+              }
             }
             &:hover {
               .sub-menu {
